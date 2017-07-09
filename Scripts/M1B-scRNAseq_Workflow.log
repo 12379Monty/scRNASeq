@@ -1,0 +1,365 @@
+
+
+processing file: M1B-scRNAseq_Workflow.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   1%
+  ordinary text without R code
+
+  |                                                                         |.                                                                |   2%
+label: Prelims (with options) 
+List of 4
+ $ include: symbol F
+ $ echo   : logi FALSE
+ $ results: chr "hide"
+ $ message: logi FALSE
+
+  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |..                                                               |   4%
+label: defFunctions (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |...                                                              |   5%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   6%
+label: loadLibs (with options) 
+List of 1
+ $ echo: symbol F
+
+
+  ordinary text without R code
+
+  |                                                                         |.....                                                            |   7%
+label: setParam (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |.....                                                            |   8%
+  ordinary text without R code
+
+  |                                                                         |......                                                           |   9%
+label: defReadFn (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |.......                                                          |  10%
+  ordinary text without R code
+
+  |                                                                         |.......                                                          |  11%
+label: readData (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |........                                                         |  12%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  13%
+label: reOrder (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |.........                                                        |  14%
+  ordinary text without R code
+
+  |                                                                         |..........                                                       |  15%
+label: sumRows (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |...........                                                      |  17%
+label: getSCESet (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |...........                                                      |  18%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: annot (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |.............                                                    |  19%
+label: cleanUp (with options) 
+List of 3
+ $ echo   : symbol F
+ $ include: symbol F
+ $ eval   : symbol T
+
+  |                                                                         |.............                                                    |  20%
+  ordinary text without R code
+
+  |                                                                         |..............                                                   |  21%
+label: calcQC (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |..............                                                   |  22%
+  ordinary text without R code
+
+  |                                                                         |...............                                                  |  23%
+label: libplotbrain
+  |                                                                         |................                                                 |  24%
+  ordinary text without R code
+
+  |                                                                         |................                                                 |  25%
+label: UMIplot
+  |                                                                         |.................                                                |  26%
+  ordinary text without R code
+
+  |                                                                         |.................                                                |  27%
+label: idOutliers
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |...................                                              |  29%
+label: rmOutliers
+  |                                                                         |...................                                              |  30%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: unnamed-chunk-1 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+
+  ordinary text without R code
+
+  |                                                                         |.....................                                            |  32%
+label: phasePlot (with options) 
+List of 2
+ $ cache     : symbol T
+ $ cache.vars: chr ""
+
+'select()' returned 1:many mapping between keys and columns
+  |                                                                         |......................                                           |  33%
+  ordinary text without R code
+
+  |                                                                         |......................                                           |  34%
+label: unnamed-chunk-2 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+  |                                                                         |.......................                                          |  35%
+  ordinary text without R code
+
+  |                                                                         |.......................                                          |  36%
+label: abhist
+  |                                                                         |........................                                         |  37%
+  ordinary text without R code
+
+  |                                                                         |.........................                                        |  38%
+label: applyFilter
+  |                                                                         |.........................                                        |  39%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-3 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |...........................                                      |  42%
+label: rmMt
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  44%
+label: unnamed-chunk-4 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+  |                                                                         |.............................                                    |  44%
+  ordinary text without R code
+
+  |                                                                         |.............................                                    |  45%
+label: clusterCells (with options) 
+List of 2
+ $ cache     : symbol T
+ $ cache.vars: chr "Cortex.sce"
+
+  |                                                                         |..............................                                   |  46%
+  ordinary text without R code
+
+  |                                                                         |...............................                                  |  47%
+label: unnamed-chunk-5 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+  |                                                                         |...............................                                  |  48%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  49%
+label: plotNormFactors
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................                                |  51%
+label: computeSpikeFactors
+  |                                                                         |..................................                               |  52%
+  ordinary text without R code
+
+  |                                                                         |..................................                               |  53%
+label: normalize
+  |                                                                         |...................................                              |  54%
+  ordinary text without R code
+
+  |                                                                         |....................................                             |  55%
+label: plotExplanatoryVariables
+  |                                                                         |....................................                             |  56%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  56%
+label: pairsExplanatoryVariables
+  |                                                                         |.....................................                            |  57%
+  ordinary text without R code
+
+  |                                                                         |......................................                           |  58%
+label: design
+  |                                                                         |.......................................                          |  59%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: hvg
+  |                                                                         |........................................                         |  61%
+  ordinary text without R code
+
+  |                                                                         |........................................                         |  62%
+label: blockedVarDecomp
+  |                                                                         |.........................................                        |  63%
+  ordinary text without R code
+
+  |                                                                         |..........................................                       |  64%
+label: unnamed-chunk-6 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+  |                                                                         |..........................................                       |  65%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  66%
+label: hvgplot
+  |                                                                         |...........................................                      |  67%
+  ordinary text without R code
+
+  |                                                                         |............................................                     |  68%
+label: getHVG
+  |                                                                         |.............................................                    |  69%
+  ordinary text without R code
+
+
+label: hvgvioplotbrain
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |..............................................                   |  71%
+label: idHVG
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+  |                                                                         |................................................                 |  73%
+label: removeBathEffects
+  |                                                                         |................................................                 |  74%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: tsneplot (with options) 
+List of 2
+ $ cache     : symbol T
+ $ cache.vars: language c("chosen", "top.hvg")
+
+  |                                                                         |.................................................                |  76%
+  ordinary text without R code
+
+  |                                                                         |..................................................               |  77%
+label: unnamed-chunk-7 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |...................................................              |  79%
+label: PCAplot
+  |                                                                         |....................................................             |  80%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  81%
+label: hclust
+  |                                                                         |.....................................................            |  81%
+  ordinary text without R code
+
+  |                                                                         |......................................................           |  82%
+label: heatMap
+  |                                                                         |......................................................           |  83%
+  ordinary text without R code
+
+  |                                                                         |.......................................................          |  84%
+label: heatMap2
+  |                                                                         |.......................................................          |  85%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  86%
+label: deNoise
+  |                                                                         |.........................................................        |  87%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: unnamed-chunk-8 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+  |                                                                         |..........................................................       |  89%
+  ordinary text without R code
+
+  |                                                                         |..........................................................       |  90%
+label: findMarkers
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |............................................................     |  92%
+label: lkMarkers
+  |                                                                         |............................................................     |  93%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: heatmapmarker
+
+  ordinary text without R code
+
+  |                                                                         |..............................................................   |  95%
+label: convertDGEList
+  |                                                                         |...............................................................  |  96%
+  ordinary text without R code
+
+  |                                                                         |...............................................................  |  97%
+label: save
+  |                                                                         |................................................................ |  98%
+   inline R code fragments
+
+  |                                                                         |................................................................ |  99%
+label: unnamed-chunk-9 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M1B-scRNAseq_Workflow.md
+
+Warning message:
+In dir.create(TABLE_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/tables/M1B' already exists

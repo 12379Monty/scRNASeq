@@ -1,0 +1,15 @@
+from http://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux
+
+find . -type f -name '*.Rmd' -exec sed -i '' s/nohup/nohup sudo/ {} +
+
+find . -type f -name '*.Rmd' -exec sed -i '' s%Apr2017%May2017% {} +
+find . -type f -name '*.Rmd' -exec sed -i '' s%Scripts2%Scripts% {} +
+find . -type f -name '*.Rmd' -exec sed -i '' s%Scripts3%Scripts% {} +
+
+find . -type f -name '*.r' -exec sed -i '' s%CN2A%CN2AD% {} +
+
+
+
+find . -type f -name '*.Rmd' -exec sed -i '' s%Feb2017%Apr2017% {} +
+find . -type f -name '*.Rmd' -exec sed -i '' s%Mar2017%Apr2017% {} +
+

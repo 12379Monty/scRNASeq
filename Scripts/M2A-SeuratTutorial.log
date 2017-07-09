@@ -1,0 +1,145 @@
+
+
+processing file: M2A-SeuratTutorial.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   2%
+  ordinary text without R code
+
+  |                                                                         |..                                                               |   4%
+label: Prelims (with options) 
+List of 4
+ $ include: symbol F
+ $ echo   : logi FALSE
+ $ results: chr "hide"
+ $ message: logi FALSE
+
+  |                                                                         |....                                                             |   6%
+  ordinary text without R code
+
+  |                                                                         |.....                                                            |   8%
+label: defFunctions (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |.......                                                          |  11%
+label: loadLibs (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |.........                                                        |  13%
+  ordinary text without R code
+
+  |                                                                         |..........                                                       |  15%
+label: setParam (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |...........                                                      |  17%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  19%
+label: readData (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |.............                                                    |  21%
+  ordinary text without R code
+
+  |                                                                         |...............                                                  |  23%
+label: basicQC (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |................                                                 |  25%
+  ordinary text without R code
+
+  |                                                                         |.................                                                |  26%
+label: RUV (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  30%
+label: detectVG (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |.....................                                            |  32%
+  ordinary text without R code
+
+  |                                                                         |......................                                           |  34%
+label: pca (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |.......................                                          |  36%
+  ordinary text without R code
+
+  |                                                                         |.........................                                        |  38%
+label: ProjectPCA (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |..........................                                       |  40%
+  ordinary text without R code
+
+  |                                                                         |...........................                                      |  42%
+label: explorePCs (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+
+  |                                                                         |.............................                                    |  45%
+label: PCHeatmap (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |...............................                                  |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  49%
+label: JackStraw (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |.................................                                |  51%
+  ordinary text without R code
+
+  |                                                                         |..................................                               |  53%
+label: JackStrawPlot (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |....................................                             |  55%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  57%
+label: PCElbowPlot (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |......................................                           |  58%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: FindClusters (with options) 
+List of 1
+ $ cache: symbol T
+
+sh: 1: java: not found
+Quitting from lines 300-303 (M2A-SeuratTutorial.Rmd) 
+Error in file(file, "rt") : cannot open the connection
+Calls: <Anonymous> ... FindClusters -> RunModularityClustering -> read.table -> file
+In addition: Warning messages:
+1: In dir.create(TABLE_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/tables/M2A' already exists
+2: In file(file, "rt") :
+  cannot open file '/usr/local/lib/R/site-library/output66394.txt': No such file or directory
+
+Execution halted

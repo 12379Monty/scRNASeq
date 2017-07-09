@@ -1,0 +1,465 @@
+
+
+processing file: M4D-clusteringTutorial.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |                                                                 |   1%
+  ordinary text without R code
+
+  |                                                                         |.                                                                |   1%
+label: Prelims (with options) 
+List of 5
+ $ include: symbol F
+ $ echo   : symbol F
+ $ results: chr "hide"
+ $ message: symbol F
+ $ warning: symbol F
+
+  |                                                                         |.                                                                |   2%
+  ordinary text without R code
+
+  |                                                                         |..                                                               |   3%
+label: defFunctions (with options) 
+List of 1
+ $ echo: symbol F
+
+
+  ordinary text without R code
+
+  |                                                                         |...                                                              |   4%
+label: loadLibs (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |...                                                              |   5%
+  ordinary text without R code
+
+
+label: setParam (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |....                                                             |   6%
+  ordinary text without R code
+
+
+label: GlobalOptions (with options) 
+List of 3
+ $ results: chr "hide"
+ $ include: logi FALSE
+ $ cache  : logi FALSE
+
+  |                                                                         |.....                                                            |   7%
+  ordinary text without R code
+
+  |                                                                         |.....                                                            |   8%
+label: datain (with options) 
+List of 1
+ $ cache: logi FALSE
+
+
+  ordinary text without R code
+
+  |                                                                         |......                                                           |   9%
+label: assayData
+  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.......                                                          |  10%
+label: filter_high
+  |                                                                         |.......                                                          |  11%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: filter
+
+   inline R code fragments
+
+  |                                                                         |........                                                         |  13%
+label: normalization
+  |                                                                         |.........                                                        |  14%
+  ordinary text without R code
+
+
+label: clusterMany
+  |                                                                         |..........                                                       |  15%
+  ordinary text without R code
+
+
+label: plotClusterEx1
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |...........                                                      |  17%
+label: plotCluster_newLabels
+
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  18%
+label: plotCluster_newOrder
+  |                                                                         |............                                                     |  19%
+  ordinary text without R code
+
+  |                                                                         |.............                                                    |  19%
+label: clusterMatrix
+  |                                                                         |.............                                                    |  20%
+  ordinary text without R code
+
+  |                                                                         |.............                                                    |  21%
+label: unnamed-chunk-1
+  |                                                                         |..............                                                   |  21%
+  ordinary text without R code
+
+  |                                                                         |..............                                                   |  22%
+label: lookAtCombineMany
+  |                                                                         |...............                                                  |  23%
+  ordinary text without R code
+
+
+label: combineMany_changeLabel
+  |                                                                         |................                                                 |  24%
+  ordinary text without R code
+
+  |                                                                         |................                                                 |  25%
+label: combineMany_newCombineMany
+
+  ordinary text without R code
+
+  |                                                                         |.................                                                |  26%
+label: combineMany_changeMinSize
+
+  ordinary text without R code
+
+  |                                                                         |..................                                               |  27%
+label: plotCoClustering_quickstart
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+
+label: makeDendrogram
+  |                                                                         |...................                                              |  29%
+  ordinary text without R code
+
+  |                                                                         |...................                                              |  30%
+label: makeDendrogram_show
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: mergeClustersPlot (with options) 
+List of 2
+ $ fig.height: num 12
+ $ fig.width : num 12
+
+  |                                                                         |.....................                                            |  32%
+  ordinary text without R code
+
+
+label: mergeClusters (with options) 
+List of 2
+ $ fig.height: num 12
+ $ fig.width : num 12
+
+  |                                                                         |.....................                                            |  33%
+  ordinary text without R code
+
+  |                                                                         |......................                                           |  34%
+label: plotHeatmap
+
+  ordinary text without R code
+
+  |                                                                         |.......................                                          |  35%
+label: getBestFeatures
+
+  ordinary text without R code
+
+  |                                                                         |.......................                                          |  36%
+label: getBestFeatures_size
+  |                                                                         |........................                                         |  37%
+  ordinary text without R code
+
+
+label: getBestFeatures_heatmap
+  |                                                                         |.........................                                        |  38%
+  ordinary text without R code
+
+  |                                                                         |.........................                                        |  39%
+label: show
+  |                                                                         |..........................                                       |  39%
+   inline R code fragments
+
+  |                                                                         |..........................                                       |  40%
+label: CEHelperCommands1
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |...........................                                      |  41%
+label: CEHelperCommands2
+  |                                                                         |...........................                                      |  42%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  43%
+label: CEHelperCommands3
+
+  ordinary text without R code
+
+  |                                                                         |.............................                                    |  44%
+label: SECommandsOnCE
+  |                                                                         |.............................                                    |  45%
+  ordinary text without R code
+
+
+label: CEClusterLengend
+  |                                                                         |..............................                                   |  46%
+  ordinary text without R code
+
+
+label: plotClusterEx1_redo
+  |                                                                         |...............................                                  |  47%
+  ordinary text without R code
+
+  |                                                                         |...............................                                  |  48%
+label: plotClusterEx1_newOrder
+
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  49%
+label: plotClusterEx1_addData
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................                                |  50%
+label: plotClusterEx1_setColors
+  |                                                                         |.................................                                |  51%
+  ordinary text without R code
+
+  |                                                                         |..................................                               |  52%
+label: plotClusterEx1_forceColors (with options) 
+List of 2
+ $ fig.width : num 18
+ $ fig.height: num 6
+
+
+  ordinary text without R code
+
+  |                                                                         |..................................                               |  53%
+label: plotHeatmap_Ex1
+  |                                                                         |...................................                              |  54%
+  ordinary text without R code
+
+
+label: plotHeatmap_Ex1.1
+  |                                                                         |....................................                             |  55%
+  ordinary text without R code
+
+
+label: plotHeatmap_primaryCluster
+  |                                                                         |....................................                             |  56%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  57%
+label: showCE_dendrogram
+
+  ordinary text without R code
+
+  |                                                                         |......................................                           |  58%
+label: plotHeatmap_dendro
+  |                                                                         |......................................                           |  59%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  59%
+label: tableArguments (with options) 
+List of 4
+ $ echo    : logi FALSE
+ $ message : logi FALSE
+ $ warnings: logi FALSE
+ $ results : chr "asis"
+
+  |                                                                         |.......................................                          |  60%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  61%
+label: defineDist
+  |                                                                         |........................................                         |  61%
+  ordinary text without R code
+
+  |                                                                         |........................................                         |  62%
+label: visualizeSubsamplingD
+  |                                                                         |.........................................                        |  63%
+  ordinary text without R code
+
+
+label: visualizeSpearmanDist
+  |                                                                         |..........................................                       |  64%
+  ordinary text without R code
+
+  |                                                                         |..........................................                       |  65%
+label: clusterManyDiffDist (with options) 
+List of 2
+ $ fig.width : num 15
+ $ fig.height: num 6
+
+
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  66%
+label: clusterManyCheckParam
+
+   inline R code fragments
+
+  |                                                                         |............................................                     |  67%
+label: clusterManyCheckParam2 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |............................................                     |  68%
+  ordinary text without R code
+
+
+label: combineMany_detailed
+  |                                                                         |.............................................                    |  69%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  70%
+label: combineMany_chooseClusters
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |..............................................                   |  71%
+label: combineMany_showDifferent
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+
+label: makeDendrogram_reducedFeatures
+  |                                                                         |...............................................                  |  73%
+  ordinary text without R code
+
+  |                                                                         |................................................                 |  74%
+label: showCe
+
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: remakeMakeDendrogram
+
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  76%
+label: clusterTypeOfCombineMany
+  |                                                                         |..................................................               |  77%
+  ordinary text without R code
+
+
+label: getBackCombineMany
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |...................................................              |  79%
+label: checkWhatDendro
+  |                                                                         |....................................................             |  79%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: mergeClusters_plot (with options) 
+List of 2
+ $ fig.width : num 12
+ $ fig.height: num 12
+
+  |                                                                         |....................................................             |  81%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: mergeClusters_ex (with options) 
+List of 2
+ $ fig.width : num 12
+ $ fig.height: num 12
+
+  |                                                                         |.....................................................            |  82%
+  ordinary text without R code
+
+  |                                                                         |......................................................           |  83%
+label: mergeClusters_redo (with options) 
+List of 2
+ $ fig.width : num 12
+ $ fig.height: num 12
+
+
+  ordinary text without R code
+
+  |                                                                         |.......................................................          |  84%
+label: workflowTable
+  |                                                                         |.......................................................          |  85%
+  ordinary text without R code
+
+
+label: workflowDetails
+  |                                                                         |........................................................         |  86%
+  ordinary text without R code
+
+
+label: markFinal
+  |                                                                         |.........................................................        |  87%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: rsecTable (with options) 
+List of 4
+ $ echo    : logi FALSE
+ $ message : logi FALSE
+ $ warnings: logi FALSE
+ $ results : chr "asis"
+
+
+  ordinary text without R code
+
+  |                                                                         |..........................................................       |  89%
+label: resetToManyClusters
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |...........................................................      |  90%
+label: getBestFeatures_onlyTopPairs
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |............................................................     |  92%
+label: getBestFeatures_oneAgainstAll
+
+  ordinary text without R code
+
+  |                                                                         |............................................................     |  93%
+label: getBestFeatures_dendroFail (with options) 
+List of 1
+ $ error: logi TRUE
+
+  |                                                                         |.............................................................    |  94%
+  ordinary text without R code
+
+
+label: showCeAgain
+  |                                                                         |..............................................................   |  95%
+  ordinary text without R code
+
+
+label: getBestFeatures_dendro
+  |                                                                         |..............................................................   |  96%
+  ordinary text without R code
+
+  |                                                                         |...............................................................  |  97%
+label: dendroContrastLevels
+
+  ordinary text without R code
+
+  |                                                                         |................................................................ |  98%
+label: dendroWithNodeNames
+  |                                                                         |................................................................ |  99%
+   inline R code fragments
+
+  |                                                                         |.................................................................|  99%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M4D-clusteringTutorial.md
+
+There were 12 warnings (use warnings() to see them)

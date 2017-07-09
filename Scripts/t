@@ -1,0 +1,77 @@
+### Get Data from Repositories 
+
+<style type="text/css"> body, td { font-size: 14px; } code.r{ font-size: 12px; } pre { font-size: 12px } </style>
+
+Get all the data files from the pucblic repositories and store locally.
+
+
+```{r Prelims, include=F, echo=FALSE, results='hide', message=FALSE}
+
+  FN <- "M2A-getData"
+
+  suppressMessages(require(rmarkdown))
+  suppressMessages(require(knitr))
+  options(stringsAsFactors=F)
+
+  # Shotcuts for knitting and redering while in R session
+  kk <- function(n='') knit2html(paste("Scripts/t", n, sep=''), envir=globalenv(),
+        output=paste('Scripts/',FN,".html", sep=''))
+  bb <- function(n='') browseURL(paste('Scripts/',FN,".html", sep=''))
+
+
+  # The usual shorcuts
+  zz <- function(n='') source(paste("Scripts/t", n, sep=''))
+
+  if(file.exists('/Users/francois/Dropbox/SingleCell/Jun2017/R/'))
+  WRKDIR <- '/Users/francois/Dropbox/SingleCell/Jun2017/R/'  else
+  WRKDIR <- '/mnt100/home/Dropbox/SingleCell/Jun2017/R'
+
+  # do once
+  #setwd(WRKDIR)
+
+  # file rmarkdown file management options: cache, figures
+  #cache_DIR <- file.path(WRKDIR, 'Scripts', 'cache/M2A/')
+  #suppressMessages(dir.create(cache_DIR, recursive=T))
+  #opts_chunk$set(cache.path=cache_DIR)
+
+  #figure_DIR <- file.path(WRKDIR, 'Scripts', 'figure/M2A/')
+  #suppressMessages(dir.create(figure_DIR, recursive=T))
+  #opts_chunk$set(fig.path=figure_DIR)
+
+```
+<!-- ***************************************************** -->
+
+```{r defFunctions, echo=F}
+  # Place holder
+```
+<!-- ***************************************************** -->
+
+```{r loadLibs, echo=F}
+ suppressMessages(require(dplyr))
+ suppressMessages(require(magrittr))
+
+ suppressMessages(require(data.table))
+ options(datatable.fread.datatable=F)
+
+ suppressMessages(require(RColorBrewer))
+
+ suppressMessages(require(edgeR))
+ suppressMessages(require(limma))
+
+ suppressMessages(require(Biobase))
+
+ if(grepl('mnt100', WRKDIR)) suppressMessages(require(GenomicRanges))
+
+ suppressMessages(require(vcd))
+ suppressMessages(require(stringr))
+ suppressMessages(require(reshape2))
+ suppressMessages(require(tidyr))
+ suppressMessages(require(plyr))
+ suppressMessages(require(irlba))
+ suppressMessages(require(readr))
+ if(grepl('mnt100', WRKDIR)) suppressMessages(require(scater))
+
+```
+<!-- ***************************************************** -->
+
+

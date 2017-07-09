@@ -1,0 +1,146 @@
+###   Install R Packages
+ 
+<style type="text/css"> body, td { font-size: 14px; } code.r{ font-size: 12px; } pre { font-size: 12px } </style>
+
+```{r Prelims, include=F, echo=FALSE, results='hide', message=FALSE} 
+
+ FN <- "M0A-installPackages"
+
+  suppressMessages(require(rmarkdown))
+  suppressMessages(require(knitr))
+  options(stringsAsFactors=F) 
+
+  # Shotcuts for knitting and redering while in R session
+  kk <- function(n='') knit2html(paste("Scripts/t", n, sep=''), envir=globalenv(),
+        output=paste('Scripts/',FN,".html", sep=''))
+  bb <- function(n='') browseURL(paste('Scripts/',FN,".html", sep=''))
+
+  # The usual shorcuts
+  zz <- function(n='') source(paste("Scripts/t", n, sep=''))
+
+  if(file.exists('/Users/francois/Dropbox/SingleCell/Jun2017/R/'))
+  WRKDIR <- '/Users/francois/Dropbox/SingleCell/Jun2017/R/'  else
+  WRKDIR <- '/mnt100/home/Dropbox/SingleCell/Jun2017/R'
+
+  # do once
+  #setwd(WRKDIR)
+
+  # file rmarkdown file management options: cache, figures
+  #cache_DIR <- file.path(WRKDIR, 'Scripts', 'cache/M0A/')
+  #suppressMessages(dir.create(cache_DIR, recursive=T))
+  #opts_chunk$set(cache.path=cache_DIR)
+
+  #figure_DIR <- file.path(WRKDIR, 'Scripts', 'figure/M0A/')
+  #suppressMessages(dir.create(figure_DIR, recursive=T))
+  #opts_chunk$set(fig.path=figure_DIR)
+
+```
+<!-- ***************************************************** -->
+
+### Update R
+
+[updateR](https://andreacirilloblog.wordpress.com/2015/10/22/updater-package-update-r-version-with-a-function-on-mac-osx/)
+
+```{r updateR, eval=F}
+  # DO ONCE
+  require(devtools)
+  install_github('andreacirilloac/updateR')
+ 
+  suppressMessages(require(updateR))
+
+  updateR(admin_password = "***os_admin_user_password***")
+
+```
+#### Everything went smoothly, R was updated to R version 3.4.0 (2017-04-21) -- "You Stupid Darkness"
+
+
+### Upgrade bioconductor
+
+```{r upgradeBioc, eval=F}
+  source("http://www.bioconductor.org/biocLite.R")
+  biocLite("BiocUpgrade")
+
+  # check versions
+
+```
+#### Error: Bioconductor version 3.5 can be upgraded, but only to 'devel'; see ?useDevel.
+
+#### A worfklow for low-level analyses of single-cell RNA-seq data
+
+[simpleSingleCell](https://www.bioconductor.org/help/workflows/simpleSingleCell/)
+
+#### Be sure to sudo R!
+
+#### Doesn't work!
+
+```{r simpleSingleCellWorkflow, eval=F}
+
+  # simpleSingleCell workflow
+  source("http://bioconductor.org/workflows.R")
+  workflowInstall("simpleSingleCell")
+
+```
+
+### Install the rest of the packages
+
+Install all packages used in
+[Hicks](https://github.com/stephaniehicks/scBatchPaper)
+
+```{r installPAckages, eval=T}
+ RequiredLibs.vec <- unique(
+  c('Biobase', 'GenomicRanges', 'vcd', 'stringr', 'reshape2',
+    'tidyr', 'plyr', 'dplyr', 'irlba', 'readr', 'scater',
+    'knitr', 'ggplot2', 'grid', 'cowplot', 'Biobase', 'GenomicRanges', 
+    'stringr', 'reshape2', 'tidyr', 'RColorBrewer', 'plyr', 'dplyr', 
+    'irlba', 'rafalib' , 'rafalib', 'SummarizedExperiment', 'MultiAssayExperiment', 
+    'scRNASeqMouseShalekBMDCs', 'scRNASeqHCT116CellLinesWu', 'scRNASeqMouseShalekBMDCs', 
+    'scRNASeqHCT116CellLinesWu', 'scRNASeqMouseShalekBMDCs', 'scRNASeqHCT116CellLinesWu', 
+    'scRNASeqMouseShalekBMDCs', 'scRNASeqHCT116CellLinesWu', 'scRNASeqMouseShalekBMDCs', 
+    'scRNASeqHCT116CellLinesWu', 'scRNASeqMouseDengMonoAllelic', 'scRNASeqMouseJaitinSpleen',
+    'scRNASeqMouseKumarPSC', 'SummarizedExperiment', 'scRNASeqHumanPatelGlioblastoma', 
+    'scRNASeqMouseShalekDendritic', 'scRNASeqMouseTreutleinLineage', 'scRNASeqHumanBosePrinting', 
+    'scRNASeqMouseBurnsInnerEar', 'scRNASeqHumanGuoGermCells', 'scRNASeqMouseKowalczykAging', 
+    'scRNASeqHumanLengOscillatoryGenes', 'scRNASeqDaniSajitaSeurat', 'scRNASeqMouseZeiselCortex', 
+    'scRNASeqHumanPatelGlioblastoma'))
+
+
+ InstalledLibs.vec <- installed.packages()[,1]
+ ToIntall.vec <- setdiff(RequiredLibs.vec,InstalledLibs.vec)
+ 
+ # Force install of ALL using sudo
+ ToIntall.vec <- RequiredLibs.vec
+
+ if(length(ToIntall.vec)){
+  source("http://www.bioconductor.org/biocLite.R")
+  biocLite(ToIntall.vec)
+ }
+
+```
+
+```{r installGithub}
+ require(devtools)
+ install_github("willtownes/patel2014gliohuman")
+ install_github("stephaniehicks/trapnell2014myoblasthuman")
+
+```
+
+### Parameter settings:
+  * WRKDIR = `r WRKDIR`
+  * FN = `r FN`
+  * Scripts = Scripts
+  * RUN DATE = `r date()`
+
+```{r, echo=F}
+ sessionInfo()
+### STOP HERE
+  knit_exit()
+```
+
+
+<!-- To run
+
+nohup sudo Rscript -e "knitr::knit2html('M0A-installPackages.Rmd')" > M0A-installPackages.log  &
+
+-->
+
+

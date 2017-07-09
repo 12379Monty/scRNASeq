@@ -1,0 +1,275 @@
+
+
+processing file: M1A-scRNAseq_Workflow.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   1%
+  ordinary text without R code
+
+  |                                                                         |..                                                               |   2%
+label: Prelims (with options) 
+List of 4
+ $ include: symbol F
+ $ echo   : logi FALSE
+ $ results: chr "hide"
+ $ message: logi FALSE
+
+  |                                                                         |..                                                               |   4%
+  ordinary text without R code
+
+  |                                                                         |...                                                              |   5%
+label: defFunctions (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |....                                                             |   6%
+  ordinary text without R code
+
+  |                                                                         |.....                                                            |   7%
+label: loadLibs (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |......                                                           |  10%
+label: setParam (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |.......                                                          |  11%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  12%
+label: downloadData (with options) 
+List of 4
+ $ eval      : symbol F
+ $ echo      : symbol T
+ $ cache     : symbol T
+ $ cache.vars: chr ""
+
+  |                                                                         |.........                                                        |  14%
+  ordinary text without R code
+
+  |                                                                         |..........                                                       |  15%
+label: loadCounts (with options) 
+List of 3
+ $ cache     : symbol F
+ $ cache.vars: chr ""
+ $ eval      : symbol F
+
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |...........                                                      |  17%
+label: libplothsc (with options) 
+List of 5
+ $ echo      : symbol F
+ $ include   : symbol F
+ $ eval      : symbol F
+ $ fig.height: num 6
+ $ fig.width : num 12
+
+  |                                                                         |............                                                     |  19%
+  ordinary text without R code
+
+  |                                                                         |.............                                                    |  20%
+label: libplothsc2 (with options) 
+List of 3
+ $ echo      : symbol T
+ $ fig.height: num 6
+ $ fig.width : num 12
+
+  |                                                                         |..............                                                   |  21%
+  ordinary text without R code
+
+  |                                                                         |..............                                                   |  22%
+label: controlplothsc (with options) 
+List of 4
+ $ echo      : symbol F
+ $ eval      : symbol F
+ $ fig.width : num 12
+ $ fig.height: num 6
+
+  |                                                                         |...............                                                  |  23%
+  ordinary text without R code
+
+  |                                                                         |................                                                 |  25%
+label: controlplothsc2 (with options) 
+List of 3
+ $ echo      : symbol T
+ $ fig.height: num 6
+ $ fig.width : num 12
+
+  |                                                                         |.................                                                |  26%
+  ordinary text without R code
+
+  |                                                                         |..................                                               |  27%
+label: outlierDrop (with options) 
+List of 2
+ $ echo: symbol F
+ $ eval: symbol F
+
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |...................                                              |  30%
+label: outlierDrop2
+  |                                                                         |....................                                             |  31%
+  ordinary text without R code
+
+  |                                                                         |.....................                                            |  32%
+label: dropSamples
+  |                                                                         |......................                                           |  33%
+  ordinary text without R code
+
+  |                                                                         |......................                                           |  35%
+label: qcPCA
+  |                                                                         |.......................                                          |  36%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  37%
+label: cellCycleScores
+Loading required package: AnnotationDbi
+
+Attaching package: 'AnnotationDbi'
+
+The following object is masked from 'package:dplyr':
+
+    select
+
+
+'select()' returned 1:many mapping between keys and columns
+  |                                                                         |.........................                                        |  38%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: subsetG1
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |...........................                                      |  42%
+label: filterCells
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+
+  |                                                                         |.............................                                    |  44%
+label: histLogAveCount
+  |                                                                         |..............................                                   |  46%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  47%
+label: top50Features
+  |                                                                         |...............................                                  |  48%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  49%
+label: altFilterCells
+  |                                                                         |.................................                                |  51%
+  ordinary text without R code
+
+  |                                                                         |..................................                               |  52%
+label: numExprPlot
+  |                                                                         |...................................                              |  53%
+  ordinary text without R code
+
+  |                                                                         |...................................                              |  54%
+label: applyFilterCell
+  |                                                                         |....................................                             |  56%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  57%
+label: getScaleFactor
+  |                                                                         |......................................                           |  58%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  59%
+label: plotSizeFactors
+  |                                                                         |.......................................                          |  60%
+  ordinary text without R code
+
+  |                                                                         |........................................                         |  62%
+label: compSpikeFactors
+  |                                                                         |.........................................                        |  63%
+  ordinary text without R code
+
+  |                                                                         |..........................................                       |  64%
+label: normSCE
+  |                                                                         |...........................................                      |  65%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: plotExplanatoryVariables
+  |                                                                         |............................................                     |  68%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: decomposeVar
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |...............................................                  |  72%
+label: hvgplothsc
+  |                                                                         |...............................................                  |  73%
+  ordinary text without R code
+
+  |                                                                         |................................................                 |  74%
+label: hvg
+  |                                                                         |.................................................                |  75%
+  ordinary text without R code
+
+  |                                                                         |..................................................               |  77%
+label: hvgvioplothsc
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |...................................................              |  79%
+label: correlatePairs
+  |                                                                         |....................................................             |  80%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: sigCor
+  |                                                                         |......................................................           |  83%
+  ordinary text without R code
+
+  |                                                                         |.......................................................          |  84%
+label: RBGL
+  |                                                                         |.......................................................          |  85%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  86%
+label: varCov
+  |                                                                         |.........................................................        |  88%
+  ordinary text without R code
+
+  |                                                                         |..........................................................       |  89%
+label: heatmap
+  |                                                                         |...........................................................      |  90%
+  ordinary text without R code
+
+  |                                                                         |...........................................................      |  91%
+label: PCA_corrHVG
+  |                                                                         |............................................................     |  93%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: tsneplot
+  |                                                                         |..............................................................   |  95%
+  ordinary text without R code
+
+  |                                                                         |...............................................................  |  96%
+label: saveSce
+  |                                                                         |...............................................................  |  98%
+   inline R code fragments
+
+  |                                                                         |................................................................ |  99%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M1A-scRNAseq_Workflow.md
+
+Warning message:
+In dir.create(TABLE_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/tables/M1A' already exists

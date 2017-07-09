@@ -1,0 +1,161 @@
+
+
+processing file: M1C-scRNAseq_Workflow.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   2%
+  ordinary text without R code
+
+  |                                                                         |...                                                              |   5%
+label: Prelims (with options) 
+List of 4
+ $ include: symbol F
+ $ echo   : logi FALSE
+ $ results: chr "hide"
+ $ message: logi FALSE
+
+  |                                                                         |....                                                             |   7%
+  ordinary text without R code
+
+  |                                                                         |......                                                           |   9%
+label: defFunctions (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |.......                                                          |  11%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  14%
+label: loadLibs (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  18%
+label: setParam (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |.............                                                    |  20%
+  ordinary text without R code
+
+  |                                                                         |...............                                                  |  23%
+label: readCounts (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |................                                                 |  25%
+  ordinary text without R code
+
+  |                                                                         |..................                                               |  27%
+label: computeSpikeFactors
+  |                                                                         |...................                                              |  30%
+  ordinary text without R code
+
+  |                                                                         |.....................                                            |  32%
+label: normalize
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  36%
+label: normplotspike
+  |                                                                         |.........................                                        |  39%
+  ordinary text without R code
+
+  |                                                                         |...........................                                      |  41%
+label: readCounts2
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  45%
+label: getAnnot
+Loading required package: AnnotationDbi
+
+Attaching package: 'AnnotationDbi'
+
+The following object is masked from 'package:dplyr':
+
+    select
+
+
+  |                                                                         |...............................                                  |  48%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: phaseplot
+'select()' returned 1:many mapping between keys and columns
+  |                                                                         |..................................                               |  52%
+  ordinary text without R code
+
+  |                                                                         |...................................                              |  55%
+label: getDesign
+  |                                                                         |.....................................                            |  57%
+  ordinary text without R code
+
+  |                                                                         |......................................                           |  59%
+label: pcaplot
+  |                                                                         |........................................                         |  61%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  64%
+label: diffusionPlot
+  |                                                                         |...........................................                      |  66%
+label: unnamed-chunk-1 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+  |                                                                         |............................................                     |  68%
+  ordinary text without R code
+
+  |                                                                         |..............................................                   |  70%
+label: readCounts3
+'select()' returned 1:many mapping between keys and columns
+  |                                                                         |...............................................                  |  73%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: idMito
+'select()' returned 1:1 mapping between keys and columns
+  |                                                                         |..................................................               |  77%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: idERCC
+  |                                                                         |.....................................................            |  82%
+  ordinary text without R code
+
+  |                                                                         |.......................................................          |  84%
+label: setSpike
+  |                                                                         |........................................................         |  86%
+  ordinary text without R code
+
+  |                                                                         |..........................................................       |  89%
+label: unnamed-chunk-2
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  93%
+label: unnamed-chunk-3 (with options) 
+List of 2
+ $ echo   : symbol F
+ $ include: symbol F
+
+  |                                                                         |..............................................................   |  95%
+   inline R code fragments
+
+  |                                                                         |................................................................ |  98%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M1C-scRNAseq_Workflow.md
+
+Warning messages:
+1: In dir.create(TABLE_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/tables/M1C' already exists
+2: In newSCESet(exprsData = t(incoming)) :
+  'logExprsOffset' should be set manually for non-count data
+3: In newSCESet(exprsData = t(incoming)) :
+  'lowerDetectionLimit' should be set manually for log-expression values

@@ -1,0 +1,286 @@
+
+
+processing file: M3A-MonocleVignette.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   1%
+  ordinary text without R code
+
+  |                                                                         |.                                                                |   2%
+label: Prelims (with options) 
+List of 4
+ $ include: symbol F
+ $ echo   : logi FALSE
+ $ results: chr "hide"
+ $ message: logi FALSE
+
+  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |...                                                              |   4%
+label: defFunctions (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |....                                                             |   5%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   7%
+label: loadLibs (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |.....                                                            |   8%
+  ordinary text without R code
+
+  |                                                                         |......                                                           |   9%
+label: setParam (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |......                                                           |  10%
+  ordinary text without R code
+
+  |                                                                         |.......                                                          |  11%
+label: package_loads
+  |                                                                         |........                                                         |  12%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  13%
+label: newCellDataSetobject (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |.........                                                        |  14%
+  ordinary text without R code
+
+  |                                                                         |..........                                                       |  15%
+label: newCellDataSet (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |...........                                                      |  16%
+  ordinary text without R code
+
+  |                                                                         |...........                                                      |  18%
+label: newCellDataSetSparse (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |............                                                     |  19%
+  ordinary text without R code
+
+  |                                                                         |.............                                                    |  20%
+label: newCellDataSetCellRanger (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |..............                                                   |  21%
+  ordinary text without R code
+
+  |                                                                         |..............                                                   |  22%
+label: convert2mRNAi (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |...............                                                  |  23%
+  ordinary text without R code
+
+  |                                                                         |................                                                 |  24%
+label: calcSize (with options) 
+List of 1
+ $ eval: symbol T
+
+Removing 139 outliers
+  |                                                                         |................                                                 |  25%
+  ordinary text without R code
+
+  |                                                                         |.................                                                |  26%
+label: filter (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |..................                                               |  27%
+  ordinary text without R code
+
+  |                                                                         |...................                                              |  29%
+label: pData
+  |                                                                         |...................                                              |  30%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: filterCells (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |.....................                                            |  32%
+  ordinary text without R code
+
+  |                                                                         |.....................                                            |  33%
+label: lkmRNATotal
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |.......................                                          |  35%
+label: lkLogNormal
+  |                                                                         |........................                                         |  36%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  37%
+label: addCellType
+  |                                                                         |.........................                                        |  38%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: classifyCells
+  |                                                                         |..........................                                       |  41%
+  ordinary text without R code
+
+  |                                                                         |...........................                                      |  42%
+label: lkCellType
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+
+  |                                                                         |.............................                                    |  44%
+label: unsup_clust
+  |                                                                         |.............................                                    |  45%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  46%
+label: plot_pc_var_exp
+Remove noise by PCA ...
+Reduce dimension by tSNE ...
+  |                                                                         |...............................                                  |  47%
+  ordinary text without R code
+
+  |                                                                         |...............................                                  |  48%
+label: plot_cell_clust
+  |                                                                         |................................                                 |  49%
+  ordinary text without R code
+
+  |                                                                         |.................................                                |  51%
+label: RUV
+Removing batch effects
+Remove noise by PCA ...
+Reduce dimension by tSNE ...
+  |                                                                         |..................................                               |  52%
+  ordinary text without R code
+
+  |                                                                         |..................................                               |  53%
+label: reClust
+  |                                                                         |...................................                              |  54%
+  ordinary text without R code
+
+  |                                                                         |....................................                             |  55%
+label: marker_diff (with options) 
+List of 1
+ $ cache: symbol T
+
+  |                                                                         |....................................                             |  56%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  57%
+label: marker_spec
+  |                                                                         |......................................                           |  58%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  59%
+label: plot_pc_variance
+  |                                                                         |.......................................                          |  60%
+  ordinary text without R code
+
+  |                                                                         |........................................                         |  62%
+label: RUV2
+Removing batch effects
+Remove noise by PCA ...
+Reduce dimension by tSNE ...
+  |                                                                         |.........................................                        |  63%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  64%
+label: imputeCellType
+  |                                                                         |..........................................                       |  65%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  66%
+label: pie2
+  |                                                                         |............................................                     |  67%
+  ordinary text without R code
+
+  |                                                                         |............................................                     |  68%
+label: HSMM_myo
+Removing 185 outliers
+  |                                                                         |.............................................                    |  69%
+  ordinary text without R code
+
+  |                                                                         |..............................................                   |  70%
+label: diff_test (with options) 
+List of 2
+ $ cache     : symbol T
+ $ cache.vars: language c("diff_test_res", "ordering_genes")
+
+  |                                                                         |..............................................                   |  71%
+  ordinary text without R code
+
+  |                                                                         |...............................................                  |  73%
+label: HiVarFilter
+  |                                                                         |................................................                 |  74%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: setOrderingGenes
+  |                                                                         |.................................................                |  76%
+  ordinary text without R code
+
+  |                                                                         |..................................................               |  77%
+label: HSMM_myo2
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |...................................................              |  79%
+label: unnamed-chunk-1
+  |                                                                         |....................................................             |  80%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: unnamed-chunk-2
+  |                                                                         |......................................................           |  82%
+  ordinary text without R code
+
+  |                                                                         |......................................................           |  84%
+label: unnamed-chunk-3
+  |                                                                         |.......................................................          |  85%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  86%
+label: unnamed-chunk-4
+  |                                                                         |........................................................         |  87%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: unnamed-chunk-5
+  |                                                                         |..........................................................       |  89%
+  ordinary text without R code
+
+  |                                                                         |...........................................................      |  90%
+label: unnamed-chunk-6
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |............................................................     |  92%
+label: unnamed-chunk-7
+  |                                                                         |.............................................................    |  93%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  95%
+label: unnamed-chunk-8
+  |                                                                         |..............................................................   |  96%
+  ordinary text without R code
+
+  |                                                                         |...............................................................  |  97%
+label: unnamed-chunk-9 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M3A-MonocleVignette.md
+
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,207 @@
+
+
+processing file: M0A-installPackages.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |....                                                             |   7%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  13%
+label: Prelims (with options) 
+List of 4
+ $ include: symbol F
+ $ echo   : logi FALSE
+ $ results: chr "hide"
+ $ message: logi FALSE
+
+  |                                                                         |.............                                                    |  20%
+  ordinary text without R code
+
+  |                                                                         |.................                                                |  27%
+label: updateR (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |......................                                           |  33%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: upgradeBioc (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |...................................                              |  53%
+label: simpleSingleCellWorkflor (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |.......................................                          |  60%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: installPAckages (with options) 
+List of 1
+ $ eval: symbol T
+
+trying URL 'https://bioconductor.org/packages/3.5/bioc/bin/macosx/el-capitan/contrib/3.4/Biobase_2.36.2.tgz'
+Content type 'application/x-gzip' length 2159398 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.5/bioc/bin/macosx/el-capitan/contrib/3.4/GenomicRanges_1.28.3.tgz'
+Content type 'application/x-gzip' length 1530165 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/vcd_1.4-3.tgz'
+Content type 'application/x-gzip' length 1270842 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/stringr_1.2.0.tgz'
+Content type 'application/x-gzip' length 143800 bytes (140 KB)
+==================================================
+downloaded 140 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/reshape2_1.4.2.tgz'
+Content type 'application/x-gzip' length 212711 bytes (207 KB)
+==================================================
+downloaded 207 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/tidyr_0.6.3.tgz'
+Content type 'application/x-gzip' length 559397 bytes (546 KB)
+==================================================
+downloaded 546 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/plyr_1.8.4.tgz'
+Content type 'application/x-gzip' length 818975 bytes (799 KB)
+==================================================
+downloaded 799 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/irlba_2.2.1.tgz'
+Content type 'application/x-gzip' length 265360 bytes (259 KB)
+==================================================
+downloaded 259 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/readr_1.1.1.tgz'
+Content type 'application/x-gzip' length 1967561 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.5/bioc/bin/macosx/el-capitan/contrib/3.4/scater_1.4.0.tgz'
+Content type 'application/x-gzip' length 8162562 bytes (7.8 MB)
+==================================================
+downloaded 7.8 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/knitr_1.16.tgz'
+Content type 'application/x-gzip' length 975065 bytes (952 KB)
+==================================================
+downloaded 952 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/ggplot2_2.2.1.tgz'
+Content type 'application/x-gzip' length 2792414 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/cowplot_0.7.0.tgz'
+Content type 'application/x-gzip' length 1794127 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/RColorBrewer_1.1-2.tgz'
+Content type 'application/x-gzip' length 24322 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.4/rafalib_1.0.0.tgz'
+Content type 'application/x-gzip' length 41482 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://bioconductor.org/packages/3.5/bioc/bin/macosx/el-capitan/contrib/3.4/SummarizedExperiment_1.6.3.tgz'
+Content type 'application/x-gzip' length 1464882 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.5/bioc/bin/macosx/el-capitan/contrib/3.4/MultiAssayExperiment_1.2.1.tgz'
+Content type 'application/x-gzip' length 1414980 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://cran.rstudio.com/src/contrib/dplyr_0.7.0.tar.gz'
+Content type 'application/x-gzip' length 690938 bytes (674 KB)
+==================================================
+downloaded 674 KB
+
+* installing *source* package ‘dplyr’ ...
+** package ‘dplyr’ successfully unpacked and MD5 sums checked
+** libs
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c RcppExports.cpp -o RcppExports.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c address.cpp -o address.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c api.cpp -o api.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c arrange.cpp -o arrange.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c between.cpp -o between.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c bind.cpp -o bind.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c combine_variables.cpp -o combine_variables.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c distinct.cpp -o distinct.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c filter.cpp -o filter.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c group_by.cpp -o group_by.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c group_indices.cpp -o group_indices.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c hybrid.cpp -o hybrid.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c hybrid_count.cpp -o hybrid_count.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c hybrid_debug.cpp -o hybrid_debug.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c hybrid_in.cpp -o hybrid_in.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c hybrid_minmax.cpp -o hybrid_minmax.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c hybrid_nth.cpp -o hybrid_nth.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c hybrid_offset.cpp -o hybrid_offset.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c hybrid_simple.cpp -o hybrid_simple.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c hybrid_window.cpp -o hybrid_window.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c init.cpp -o init.o
+clang -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c init_register.c -o init_register.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c join.cpp -o join.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c join_exports.cpp -o join_exports.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c mutate.cpp -o mutate.o
+clang -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c rlang-export.c -o rlang-export.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c select.cpp -o select.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c set.cpp -o set.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c slice.cpp -o slice.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c summarise.cpp -o summarise.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c test.cpp -o test.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c utils.cpp -o utils.o
+clang++  -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -DRCPP_USING_UTF8_ERROR_STRING -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/bindrcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.4/Resources/library/plogr/include" -I/usr/local/include   -fPIC  -Wall -g -O2  -c window.cpp -o window.o
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Library/Frameworks/R.framework/Resources/lib -L/usr/local/lib -o dplyr.so RcppExports.o address.o api.o arrange.o between.o bind.o combine_variables.o distinct.o filter.o group_by.o group_indices.o hybrid.o hybrid_count.o hybrid_debug.o hybrid_in.o hybrid_minmax.o hybrid_nth.o hybrid_offset.o hybrid_simple.o hybrid_window.o init.o init_register.o join.o join_exports.o mutate.o rlang-export.o select.o set.o slice.o summarise.o test.o utils.o window.o -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+installing to /Library/Frameworks/R.framework/Versions/3.4/Resources/library/dplyr/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (dplyr)
+
+The downloaded source packages are in
+	'/private/var/folders/27/s0bmn0055zg162hrbt5nhxpm0000gq/T/RtmpMOXvhe/downloaded_packages'
+  |                                                                         |................................................                 |  73%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: installGithub
+ERROR: failed to lock directory ‘/Library/Frameworks/R.framework/Versions/3.4/Resources/library’ for modifying
+Try removing ‘/Library/Frameworks/R.framework/Versions/3.4/Resources/library/00LOCK-willtownes-patel2014gliohuman-143f352’
+  |                                                                         |........................................................         |  87%
+   inline R code fragments
+
+  |                                                                         |.............................................................    |  93%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M0A-installPackages.md
+

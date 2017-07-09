@@ -1,0 +1,3086 @@
+
+
+processing file: M0C-installPackages.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.......                                                          |  11%
+  ordinary text without R code
+
+  |                                                                         |..............                                                   |  22%
+label: Prelims (with options) 
+List of 4
+ $ include: symbol F
+ $ echo   : logi FALSE
+ $ results: chr "hide"
+ $ message: logi FALSE
+
+  |                                                                         |......................                                           |  33%
+  ordinary text without R code
+
+  |                                                                         |.............................                                    |  44%
+label: installGithub (with options) 
+List of 1
+ $ eval: symbol T
+
+trying URL 'https://cran.rstudio.com/src/contrib/ape_4.1.tar.gz'
+Content type 'application/x-gzip' length 771308 bytes (753 KB)
+==================================================
+downloaded 753 KB
+
+* installing *source* package ‘ape’ ...
+** package ‘ape’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c BIONJ.c -o BIONJ.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c NNI.c -o NNI.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SPR.c -o SPR.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c TBR.c -o TBR.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c additive.c -o additive.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ape.c -o ape.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bNNI.c -o bNNI.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bionjs.c -o bionjs.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bipartition.c -o bipartition.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bitsplits.c -o bitsplits.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c delta_plot.c -o delta_plot.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dist_dna.c -o dist_dna.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dist_nodes.c -o dist_nodes.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ewLasso.c -o ewLasso.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c heap.c -o heap.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mat_expo.c -o mat_expo.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c me.c -o me.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c me_balanced.c -o me_balanced.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c me_ols.c -o me_ols.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mvr.c -o mvr.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mvrs.c -o mvrs.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c nj.c -o nj.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c njs.c -o njs.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pic.c -o pic.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c plot_phylo.c -o plot_phylo.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rTrait.c -o rTrait.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read_dna.c -o read_dna.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c reorder_phylo.c -o reorder_phylo.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c treePop.c -o treePop.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tree_build.c -o tree_build.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tree_phylo.c -o tree_phylo.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c triangMtd.c -o triangMtd.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c triangMtds.c -o triangMtds.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ultrametric.c -o ultrametric.o
+gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o ape.so BIONJ.o NNI.o SPR.o TBR.o additive.o ape.o bNNI.o bionjs.o bipartition.o bitsplits.o delta_plot.o dist_dna.o dist_nodes.o ewLasso.o heap.o mat_expo.o me.o me_balanced.o me_ols.o mvr.o mvrs.o nj.o njs.o pic.o plot_phylo.o rTrait.o read_dna.o reorder_phylo.o treePop.o tree_build.o tree_phylo.o triangMtd.o triangMtds.o ultrametric.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/ape/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (ape)
+trying URL 'https://cran.rstudio.com/src/contrib/caret_6.0-76.tar.gz'
+Content type 'application/x-gzip' length 2362161 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://cran.rstudio.com/src/contrib/ModelMetrics_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 11615 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+* installing *source* package ‘ModelMetrics’ ...
+** package ‘ModelMetrics’ successfully unpacked and MD5 sums checked
+** libs
+g++  -I/usr/share/R/include -DNDEBUG  -I"/usr/local/lib/R/site-library/Rcpp/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++  -I/usr/share/R/include -DNDEBUG  -I"/usr/local/lib/R/site-library/Rcpp/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c auc_.cpp -o auc_.o
+g++  -I/usr/share/R/include -DNDEBUG  -I"/usr/local/lib/R/site-library/Rcpp/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c confusionMatrix_.cpp -o confusionMatrix_.o
+g++  -I/usr/share/R/include -DNDEBUG  -I"/usr/local/lib/R/site-library/Rcpp/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c error.cpp -o error.o
+g++  -I/usr/share/R/include -DNDEBUG  -I"/usr/local/lib/R/site-library/Rcpp/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c logLoss_.cpp -o logLoss_.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o ModelMetrics.so RcppExports.o auc_.o confusionMatrix_.o error.o logLoss_.o -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/ModelMetrics/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** tests
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (ModelMetrics)
+* installing *source* package ‘caret’ ...
+** package ‘caret’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c caret.c -o caret.o
+gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o caret.so caret.o -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/caret/libs
+** R
+** data
+** inst
+** tests
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (caret)
+trying URL 'https://cran.rstudio.com/src/contrib/fastICA_1.2-1.tar.gz'
+Content type 'application/x-gzip' length 11575 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+* installing *source* package ‘fastICA’ ...
+** package ‘fastICA’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ica.c -o ica.o
+gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o fastICA.so ica.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/fastICA/libs
+** R
+** inst
+** tests
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (fastICA)
+trying URL 'https://cran.rstudio.com/src/contrib/lars_1.2.tar.gz'
+Content type 'application/x-gzip' length 173620 bytes (169 KB)
+==================================================
+downloaded 169 KB
+
+* installing *source* package ‘lars’ ...
+** package ‘lars’ successfully unpacked and MD5 sums checked
+** libs
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c delcol.f -o delcol.o
+gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o lars.so delcol.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/lars/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (lars)
+trying URL 'https://cran.rstudio.com/src/contrib/mixtools_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 808806 bytes (789 KB)
+==================================================
+downloaded 789 KB
+
+trying URL 'https://cran.rstudio.com/src/contrib/segmented_0.5-2.1.tar.gz'
+Content type 'application/x-gzip' length 80763 bytes (78 KB)
+==================================================
+downloaded 78 KB
+
+* installing *source* package ‘segmented’ ...
+** package ‘segmented’ successfully unpacked and MD5 sums checked
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (segmented)
+* installing *source* package ‘mixtools’ ...
+** package ‘mixtools’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c KDEloc2.c -o KDEloc2.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c KDElocscale.c -o KDElocscale.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c KDErepeated.c -o KDErepeated.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c KDErepeatedbw.c -o KDErepeatedbw.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c KDEsymloc.c -o KDEsymloc.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c KDEsymloc1comp.c -o KDEsymloc1comp.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c KDEsymloc2.c -o KDEsymloc2.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c multinompost.c -o multinompost.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mvwkde.c -o mvwkde.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c new_svalues.c -o new_svalues.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c normpost.c -o normpost.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c npMSL.c -o npMSL.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sd.c -o sd.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c z.c -o z.o
+gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mixtools.so KDEloc2.o KDElocscale.o KDErepeated.o KDErepeatedbw.o KDEsymloc.o KDEsymloc1comp.o KDEsymloc2.o init.o multinompost.o mvwkde.o new_svalues.o normpost.o npMSL.o sd.o z.o -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/mixtools/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (mixtools)
+trying URL 'https://cran.rstudio.com/src/contrib/pbapply_1.3-2.tar.gz'
+Content type 'application/x-gzip' length 12332 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+* installing *source* package ‘pbapply’ ...
+** package ‘pbapply’ successfully unpacked and MD5 sums checked
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (pbapply)
+trying URL 'https://cran.rstudio.com/src/contrib/ranger_0.8.0.tar.gz'
+Content type 'application/x-gzip' length 113207 bytes (110 KB)
+==================================================
+downloaded 110 KB
+
+* installing *source* package ‘ranger’ ...
+** package ‘ranger’ successfully unpacked and MD5 sums checked
+** libs
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c AAA_check_cpp11.cpp -o AAA_check_cpp11.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c Data.cpp -o Data.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c DataChar.cpp -o DataChar.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c DataDouble.cpp -o DataDouble.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c DataFloat.cpp -o DataFloat.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c DataSparse.cpp -o DataSparse.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c Forest.cpp -o Forest.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c ForestClassification.cpp -o ForestClassification.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c ForestProbability.cpp -o ForestProbability.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c ForestRegression.cpp -o ForestRegression.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c ForestSurvival.cpp -o ForestSurvival.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c Tree.cpp -o Tree.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c TreeClassification.cpp -o TreeClassification.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c TreeProbability.cpp -o TreeProbability.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c TreeRegression.cpp -o TreeRegression.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c TreeSurvival.cpp -o TreeSurvival.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c rangerCpp.cpp -o rangerCpp.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ranger_init.c -o ranger_init.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG -DR_BUILD -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c utility.cpp -o utility.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o ranger.so AAA_check_cpp11.o Data.o DataChar.o DataDouble.o DataFloat.o DataSparse.o Forest.o ForestClassification.o ForestProbability.o ForestRegression.o ForestSurvival.o RcppExports.o Tree.o TreeClassification.o TreeProbability.o TreeRegression.o TreeSurvival.o rangerCpp.o ranger_init.o utility.o -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/ranger/libs
+** R
+** inst
+** tests
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (ranger)
+trying URL 'https://cran.rstudio.com/src/contrib/RcppProgress_0.3.tar.gz'
+Content type 'application/x-gzip' length 9897 bytes
+==================================================
+downloaded 9897 bytes
+
+* installing *source* package ‘RcppProgress’ ...
+** package ‘RcppProgress’ successfully unpacked and MD5 sums checked
+** libs
+g++  -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I"/usr/local/lib/R/site-library/Rcpp/include"    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tests.cpp -o tests.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RcppProgress.so tests.o -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/RcppProgress/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (RcppProgress)
+trying URL 'https://cran.rstudio.com/src/contrib/ROCR_1.0-7.tar.gz'
+Content type 'application/x-gzip' length 107872 bytes (105 KB)
+==================================================
+downloaded 105 KB
+
+* installing *source* package ‘ROCR’ ...
+** package ‘ROCR’ successfully unpacked and MD5 sums checked
+** R
+** data
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (ROCR)
+trying URL 'https://cran.rstudio.com/src/contrib/tclust_1.2-3.tar.gz'
+Content type 'application/x-gzip' length 1053599 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://cran.rstudio.com/src/contrib/sn_1.5-0.tar.gz'
+Content type 'application/x-gzip' length 460103 bytes (449 KB)
+==================================================
+downloaded 449 KB
+
+trying URL 'https://cran.rstudio.com/src/contrib/mnormt_1.5-5.tar.gz'
+Content type 'application/x-gzip' length 37169 bytes (36 KB)
+==================================================
+downloaded 36 KB
+
+* installing *source* package ‘mnormt’ ...
+** package ‘mnormt’ successfully unpacked and MD5 sums checked
+** libs
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c biv-nt.f -o biv-nt.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c sadmvnt.f -o sadmvnt.o
+gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mnormt.so biv-nt.o sadmvnt.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/mnormt/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (mnormt)
+trying URL 'https://cran.rstudio.com/src/contrib/numDeriv_2016.8-1.tar.gz'
+Content type 'application/x-gzip' length 76303 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+* installing *source* package ‘numDeriv’ ...
+** package ‘numDeriv’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (numDeriv)
+* installing *source* package ‘sn’ ...
+** package ‘sn’ successfully unpacked and MD5 sums checked
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (sn)
+* installing *source* package ‘tclust’ ...
+** package ‘tclust’ successfully unpacked and MD5 sums checked
+** libs
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ML_meal.cpp -o ML_meal.o
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ML_package.cpp -o ML_package.o
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ML_passrng.cpp -o ML_passrng.o
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_meal.cpp -o R_meal.o
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_meal_BLAS.cpp -o R_meal_BLAS.o
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_package.cpp -o R_package.o
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from R_package.cpp:2:
+smat.base.h:401:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:458:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:498:40: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwOffset + dwSize)) ;
+                                        ^
+smat.base.h:520:53: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (m_dwOffset + dwOffset + dwSize)) ;
+                                                     ^
+smat.base.h:540:44: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (GetOffset () + dwSize)) ;
+                                            ^
+smat.base.h:553:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwSize)) ;
+                             ^
+smat.base.h:662:65: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size  GetDim   (t_size p) const { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                                 ^
+smat.base.h:665:68: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size * GetDimPtr  (t_size p) const { THROW  (p < P) ; return m_adwDim + p ; }
+                                                                    ^
+smat.base.h:669:60: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline   t_size & GetDimRef  (t_size p)   { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                            ^
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from R_package.cpp:2:
+smat.base.h:735:63: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (0) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                               ^
+smat.base.h:742:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSize <= t_base::GetSize ()) ;
+                                       ^
+smat.base.h:754:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:882:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (vec)) ;
+                                ^
+smat.base.h:906:30: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (n < t_this::size ()) ;
+                              ^
+smat.base.h:1058:67: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (FALSE) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                                   ^
+smat.base.h:1062:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:1074:48: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwRows * dwCols <= t_base::GetSize ()) ;
+                                                ^
+smat.base.h:1238:47: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == t_this::m.nrow ()) ;
+                                               ^
+smat.base.h:1239:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSource < t_this::m.ncol ()) ;
+                                       ^
+smat.base.h:1240:35: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwDest < t_this::ncol ()) ;
+                                   ^
+smat.base.h:1263:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (mat)) ;
+                                ^
+smat.base.h:1281:46: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::ncol () == order.GetSize ()) ;
+                                              ^
+smat.base.h:1282:41: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == mat.nrow ()) ;
+                                         ^
+smat.base.h:1358:66: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (ref.GetSize () <= dwRows * dwCols * dwSize * sizeof (T)) ;
+                                                                  ^
+smat.base.h:1383:70: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   tc_item &Item (t_size idx)  const { THROW (idx < t_this::GetSize ()) ; return *m_apData [idx] ; }
+                                                                      ^
+In file included from smat.h:29:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from R_package.cpp:2:
+smat.elop.h:181:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:189:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:190:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:222:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:230:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:231:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:262:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (c)) ;
+                          ^
+smat.elop.h:263:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.nrow ()) ;
+                                 ^
+smat.elop.h:264:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:307:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == b.size ()) ;
+                                 ^
+smat.elop.h:308:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:342:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:343:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:344:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:354:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:355:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:356:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:357:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:399:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:400:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:401:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:411:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:412:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:413:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:414:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:453:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.ncol () == b.nsize ()) ;
+                                  ^
+smat.elop.h:454:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:464:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:465:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:466:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:467:43: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountMatches (e, d) == a.nrow ()) ;
+                                           ^
+smat.elop.h:515:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:516:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:530:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:531:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:532:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:533:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:571:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:611:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == d.size ()) ;
+                                 ^
+smat.elop.h:690:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:735:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:761:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:801:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:802:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:838:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == b.size ()) ;
+                                  ^
+smat.elop.h:839:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == c.size ()) ;
+                                  ^
+smat.elop.h:866:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:896:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:897:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:928:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncols ()) ;
+                                  ^
+smat.elop.h:950:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:951:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1010:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1034:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1056:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1079:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1108:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1109:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1110:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1146:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1147:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (c) == a.size ()) ;
+                                     ^
+smat.elop.h:1177:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1203:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1228:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+In file included from smat.h:31:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from R_package.cpp:2:
+smat.mem.h:25:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:34:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:35:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol()) ;
+                               ^
+smat.mem.h:59:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:60:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.size ()) ;
+                                ^
+smat.mem.h:84:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.size ()) ;
+                                ^
+smat.mem.h:177:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (v.nsize () == m.GetMinDim ()) ;
+                                      ^
+smat.mem.h:193:27: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwCol < b.ncol ()) ;
+                           ^
+smat.mem.h:207:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwStart <= dwEnd) ;
+                          ^
+smat.mem.h:208:28: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwEnd <= b.ncol ()) ;
+                            ^
+smat.mem.h:209:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.nrow ()) ;
+                                ^
+smat.mem.h:210:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == dwEnd - dwStart) ;
+                                      ^
+In file included from smat.h:32:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from R_package.cpp:2:
+smat.matop.h:82:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol() == b.size ()) ;
+                               ^
+smat.matop.h:83:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow() == b.size ()) ;
+                               ^
+smat.matop.h:128:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+smat.matop.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+In file included from smat.h:33:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from R_package.cpp:2:
+smat.misc.h:32:16: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (l <= u) ;
+                ^
+In file included from smat.h:36:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from R_package.cpp:2:
+smat.stat.h:172:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+smat.stat.h:212:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c clust.cpp -o clust.o
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from clust.cpp:1:
+smat.base.h:401:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:458:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:498:40: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwOffset + dwSize)) ;
+                                        ^
+smat.base.h:520:53: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (m_dwOffset + dwOffset + dwSize)) ;
+                                                     ^
+smat.base.h:540:44: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (GetOffset () + dwSize)) ;
+                                            ^
+smat.base.h:553:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwSize)) ;
+                             ^
+smat.base.h:662:65: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size  GetDim   (t_size p) const { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                                 ^
+smat.base.h:665:68: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size * GetDimPtr  (t_size p) const { THROW  (p < P) ; return m_adwDim + p ; }
+                                                                    ^
+smat.base.h:669:60: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline   t_size & GetDimRef  (t_size p)   { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                            ^
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from clust.cpp:1:
+smat.base.h:735:63: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (0) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                               ^
+smat.base.h:742:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSize <= t_base::GetSize ()) ;
+                                       ^
+smat.base.h:754:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:882:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (vec)) ;
+                                ^
+smat.base.h:906:30: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (n < t_this::size ()) ;
+                              ^
+smat.base.h:1058:67: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (FALSE) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                                   ^
+smat.base.h:1062:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:1074:48: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwRows * dwCols <= t_base::GetSize ()) ;
+                                                ^
+smat.base.h:1238:47: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == t_this::m.nrow ()) ;
+                                               ^
+smat.base.h:1239:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSource < t_this::m.ncol ()) ;
+                                       ^
+smat.base.h:1240:35: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwDest < t_this::ncol ()) ;
+                                   ^
+smat.base.h:1263:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (mat)) ;
+                                ^
+smat.base.h:1281:46: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::ncol () == order.GetSize ()) ;
+                                              ^
+smat.base.h:1282:41: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == mat.nrow ()) ;
+                                         ^
+smat.base.h:1358:66: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (ref.GetSize () <= dwRows * dwCols * dwSize * sizeof (T)) ;
+                                                                  ^
+smat.base.h:1383:70: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   tc_item &Item (t_size idx)  const { THROW (idx < t_this::GetSize ()) ; return *m_apData [idx] ; }
+                                                                      ^
+In file included from smat.h:29:0,
+                 from clust.h:8,
+                 from clust.cpp:1:
+smat.elop.h:181:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:189:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:190:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:222:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:230:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:231:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:262:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (c)) ;
+                          ^
+smat.elop.h:263:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.nrow ()) ;
+                                 ^
+smat.elop.h:264:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:307:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == b.size ()) ;
+                                 ^
+smat.elop.h:308:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:342:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:343:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:344:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:354:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:355:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:356:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:357:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:399:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:400:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:401:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:411:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:412:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:413:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:414:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:453:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.ncol () == b.nsize ()) ;
+                                  ^
+smat.elop.h:454:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:464:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:465:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:466:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:467:43: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountMatches (e, d) == a.nrow ()) ;
+                                           ^
+smat.elop.h:515:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:516:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:530:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:531:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:532:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:533:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:571:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:611:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == d.size ()) ;
+                                 ^
+smat.elop.h:690:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:735:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:761:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:801:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:802:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:838:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == b.size ()) ;
+                                  ^
+smat.elop.h:839:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == c.size ()) ;
+                                  ^
+smat.elop.h:866:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:896:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:897:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:928:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncols ()) ;
+                                  ^
+smat.elop.h:950:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:951:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1010:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1034:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1056:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1079:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1108:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1109:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1110:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1146:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1147:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (c) == a.size ()) ;
+                                     ^
+smat.elop.h:1177:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1203:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1228:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+In file included from smat.h:31:0,
+                 from clust.h:8,
+                 from clust.cpp:1:
+smat.mem.h:25:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:34:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:35:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol()) ;
+                               ^
+smat.mem.h:59:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:60:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.size ()) ;
+                                ^
+smat.mem.h:84:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.size ()) ;
+                                ^
+smat.mem.h:177:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (v.nsize () == m.GetMinDim ()) ;
+                                      ^
+smat.mem.h:193:27: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwCol < b.ncol ()) ;
+                           ^
+smat.mem.h:207:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwStart <= dwEnd) ;
+                          ^
+smat.mem.h:208:28: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwEnd <= b.ncol ()) ;
+                            ^
+smat.mem.h:209:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.nrow ()) ;
+                                ^
+smat.mem.h:210:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == dwEnd - dwStart) ;
+                                      ^
+In file included from smat.h:32:0,
+                 from clust.h:8,
+                 from clust.cpp:1:
+smat.matop.h:82:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol() == b.size ()) ;
+                               ^
+smat.matop.h:83:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow() == b.size ()) ;
+                               ^
+smat.matop.h:128:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+smat.matop.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+In file included from smat.h:33:0,
+                 from clust.h:8,
+                 from clust.cpp:1:
+smat.misc.h:32:16: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (l <= u) ;
+                ^
+In file included from smat.h:36:0,
+                 from clust.h:8,
+                 from clust.cpp:1:
+smat.stat.h:172:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+smat.stat.h:212:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+clust.cpp:11:11: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (0) ;
+           ^
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c restr.cpp -o restr.o
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr.cpp:1:
+smat.base.h:401:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:458:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:498:40: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwOffset + dwSize)) ;
+                                        ^
+smat.base.h:520:53: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (m_dwOffset + dwOffset + dwSize)) ;
+                                                     ^
+smat.base.h:540:44: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (GetOffset () + dwSize)) ;
+                                            ^
+smat.base.h:553:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwSize)) ;
+                             ^
+smat.base.h:662:65: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size  GetDim   (t_size p) const { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                                 ^
+smat.base.h:665:68: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size * GetDimPtr  (t_size p) const { THROW  (p < P) ; return m_adwDim + p ; }
+                                                                    ^
+smat.base.h:669:60: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline   t_size & GetDimRef  (t_size p)   { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                            ^
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr.cpp:1:
+smat.base.h:735:63: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (0) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                               ^
+smat.base.h:742:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSize <= t_base::GetSize ()) ;
+                                       ^
+smat.base.h:754:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:882:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (vec)) ;
+                                ^
+smat.base.h:906:30: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (n < t_this::size ()) ;
+                              ^
+smat.base.h:1058:67: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (FALSE) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                                   ^
+smat.base.h:1062:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:1074:48: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwRows * dwCols <= t_base::GetSize ()) ;
+                                                ^
+smat.base.h:1238:47: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == t_this::m.nrow ()) ;
+                                               ^
+smat.base.h:1239:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSource < t_this::m.ncol ()) ;
+                                       ^
+smat.base.h:1240:35: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwDest < t_this::ncol ()) ;
+                                   ^
+smat.base.h:1263:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (mat)) ;
+                                ^
+smat.base.h:1281:46: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::ncol () == order.GetSize ()) ;
+                                              ^
+smat.base.h:1282:41: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == mat.nrow ()) ;
+                                         ^
+smat.base.h:1358:66: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (ref.GetSize () <= dwRows * dwCols * dwSize * sizeof (T)) ;
+                                                                  ^
+smat.base.h:1383:70: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   tc_item &Item (t_size idx)  const { THROW (idx < t_this::GetSize ()) ; return *m_apData [idx] ; }
+                                                                      ^
+In file included from smat.h:29:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr.cpp:1:
+smat.elop.h:181:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:189:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:190:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:222:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:230:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:231:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:262:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (c)) ;
+                          ^
+smat.elop.h:263:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.nrow ()) ;
+                                 ^
+smat.elop.h:264:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:307:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == b.size ()) ;
+                                 ^
+smat.elop.h:308:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:342:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:343:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:344:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:354:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:355:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:356:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:357:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:399:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:400:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:401:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:411:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:412:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:413:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:414:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:453:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.ncol () == b.nsize ()) ;
+                                  ^
+smat.elop.h:454:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:464:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:465:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:466:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:467:43: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountMatches (e, d) == a.nrow ()) ;
+                                           ^
+smat.elop.h:515:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:516:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:530:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:531:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:532:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:533:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:571:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:611:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == d.size ()) ;
+                                 ^
+smat.elop.h:690:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:735:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:761:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:801:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:802:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:838:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == b.size ()) ;
+                                  ^
+smat.elop.h:839:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == c.size ()) ;
+                                  ^
+smat.elop.h:866:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:896:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:897:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:928:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncols ()) ;
+                                  ^
+smat.elop.h:950:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:951:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1010:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1034:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1056:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1079:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1108:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1109:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1110:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1146:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1147:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (c) == a.size ()) ;
+                                     ^
+smat.elop.h:1177:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1203:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1228:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+In file included from smat.h:31:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr.cpp:1:
+smat.mem.h:25:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:34:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:35:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol()) ;
+                               ^
+smat.mem.h:59:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:60:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.size ()) ;
+                                ^
+smat.mem.h:84:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.size ()) ;
+                                ^
+smat.mem.h:177:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (v.nsize () == m.GetMinDim ()) ;
+                                      ^
+smat.mem.h:193:27: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwCol < b.ncol ()) ;
+                           ^
+smat.mem.h:207:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwStart <= dwEnd) ;
+                          ^
+smat.mem.h:208:28: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwEnd <= b.ncol ()) ;
+                            ^
+smat.mem.h:209:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.nrow ()) ;
+                                ^
+smat.mem.h:210:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == dwEnd - dwStart) ;
+                                      ^
+In file included from smat.h:32:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr.cpp:1:
+smat.matop.h:82:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol() == b.size ()) ;
+                               ^
+smat.matop.h:83:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow() == b.size ()) ;
+                               ^
+smat.matop.h:128:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+smat.matop.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+In file included from smat.h:33:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr.cpp:1:
+smat.misc.h:32:16: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (l <= u) ;
+                ^
+In file included from smat.h:36:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr.cpp:1:
+smat.stat.h:172:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+smat.stat.h:212:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+restr.cpp:13:11: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (0) ;
+           ^
+restr.cpp:90:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   default: THROW (FALSE) ;
+                        ^
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c restr_eigen.cpp -o restr_eigen.o
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr_eigen.cpp:3:
+smat.base.h:401:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:458:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:498:40: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwOffset + dwSize)) ;
+                                        ^
+smat.base.h:520:53: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (m_dwOffset + dwOffset + dwSize)) ;
+                                                     ^
+smat.base.h:540:44: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (GetOffset () + dwSize)) ;
+                                            ^
+smat.base.h:553:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwSize)) ;
+                             ^
+smat.base.h:662:65: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size  GetDim   (t_size p) const { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                                 ^
+smat.base.h:665:68: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size * GetDimPtr  (t_size p) const { THROW  (p < P) ; return m_adwDim + p ; }
+                                                                    ^
+smat.base.h:669:60: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline   t_size & GetDimRef  (t_size p)   { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                            ^
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr_eigen.cpp:3:
+smat.base.h:735:63: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (0) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                               ^
+smat.base.h:742:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSize <= t_base::GetSize ()) ;
+                                       ^
+smat.base.h:754:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:882:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (vec)) ;
+                                ^
+smat.base.h:906:30: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (n < t_this::size ()) ;
+                              ^
+smat.base.h:1058:67: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (FALSE) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                                   ^
+smat.base.h:1062:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:1074:48: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwRows * dwCols <= t_base::GetSize ()) ;
+                                                ^
+smat.base.h:1238:47: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == t_this::m.nrow ()) ;
+                                               ^
+smat.base.h:1239:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSource < t_this::m.ncol ()) ;
+                                       ^
+smat.base.h:1240:35: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwDest < t_this::ncol ()) ;
+                                   ^
+smat.base.h:1263:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (mat)) ;
+                                ^
+smat.base.h:1281:46: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::ncol () == order.GetSize ()) ;
+                                              ^
+smat.base.h:1282:41: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == mat.nrow ()) ;
+                                         ^
+smat.base.h:1358:66: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (ref.GetSize () <= dwRows * dwCols * dwSize * sizeof (T)) ;
+                                                                  ^
+smat.base.h:1383:70: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   tc_item &Item (t_size idx)  const { THROW (idx < t_this::GetSize ()) ; return *m_apData [idx] ; }
+                                                                      ^
+In file included from smat.h:29:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr_eigen.cpp:3:
+smat.elop.h:181:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:189:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:190:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:222:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:230:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:231:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:262:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (c)) ;
+                          ^
+smat.elop.h:263:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.nrow ()) ;
+                                 ^
+smat.elop.h:264:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:307:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == b.size ()) ;
+                                 ^
+smat.elop.h:308:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:342:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:343:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:344:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:354:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:355:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:356:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:357:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:399:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:400:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:401:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:411:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:412:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:413:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:414:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:453:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.ncol () == b.nsize ()) ;
+                                  ^
+smat.elop.h:454:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:464:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:465:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:466:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:467:43: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountMatches (e, d) == a.nrow ()) ;
+                                           ^
+smat.elop.h:515:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:516:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:530:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:531:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:532:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:533:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:571:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:611:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == d.size ()) ;
+                                 ^
+smat.elop.h:690:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:735:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:761:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:801:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:802:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:838:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == b.size ()) ;
+                                  ^
+smat.elop.h:839:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == c.size ()) ;
+                                  ^
+smat.elop.h:866:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:896:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:897:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:928:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncols ()) ;
+                                  ^
+smat.elop.h:950:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:951:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1010:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1034:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1056:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1079:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1108:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1109:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1110:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1146:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1147:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (c) == a.size ()) ;
+                                     ^
+smat.elop.h:1177:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1203:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1228:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+In file included from smat.h:31:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr_eigen.cpp:3:
+smat.mem.h:25:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:34:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:35:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol()) ;
+                               ^
+smat.mem.h:59:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:60:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.size ()) ;
+                                ^
+smat.mem.h:84:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.size ()) ;
+                                ^
+smat.mem.h:177:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (v.nsize () == m.GetMinDim ()) ;
+                                      ^
+smat.mem.h:193:27: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwCol < b.ncol ()) ;
+                           ^
+smat.mem.h:207:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwStart <= dwEnd) ;
+                          ^
+smat.mem.h:208:28: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwEnd <= b.ncol ()) ;
+                            ^
+smat.mem.h:209:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.nrow ()) ;
+                                ^
+smat.mem.h:210:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == dwEnd - dwStart) ;
+                                      ^
+In file included from smat.h:32:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr_eigen.cpp:3:
+smat.matop.h:82:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol() == b.size ()) ;
+                               ^
+smat.matop.h:83:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow() == b.size ()) ;
+                               ^
+smat.matop.h:128:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+smat.matop.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+In file included from smat.h:33:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr_eigen.cpp:3:
+smat.misc.h:32:16: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (l <= u) ;
+                ^
+In file included from smat.h:36:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from restr_eigen.cpp:3:
+smat.stat.h:172:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+smat.stat.h:212:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+restr_eigen.cpp:14:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (ev.ncol () == ks.size ()) ;
+                                  ^
+restr_eigen.cpp:143:43: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (mEV.ncol () == vClustSize.size ()) ;
+                                           ^
+restr_eigen.cpp:180:20: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dFact >= 1) ;
+                    ^
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c smat.cpp -o smat.o
+In file included from smat.h:28:0,
+                 from smat.cpp:20:
+smat.base.h:401:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:458:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:498:40: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwOffset + dwSize)) ;
+                                        ^
+smat.base.h:520:53: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (m_dwOffset + dwOffset + dwSize)) ;
+                                                     ^
+smat.base.h:540:44: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (GetOffset () + dwSize)) ;
+                                            ^
+smat.base.h:553:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwSize)) ;
+                             ^
+smat.base.h:662:65: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size  GetDim   (t_size p) const { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                                 ^
+smat.base.h:665:68: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size * GetDimPtr  (t_size p) const { THROW  (p < P) ; return m_adwDim + p ; }
+                                                                    ^
+smat.base.h:669:60: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline   t_size & GetDimRef  (t_size p)   { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                            ^
+In file included from smat.h:28:0,
+                 from smat.cpp:20:
+smat.base.h:735:63: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (0) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                               ^
+smat.base.h:742:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSize <= t_base::GetSize ()) ;
+                                       ^
+smat.base.h:754:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:882:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (vec)) ;
+                                ^
+smat.base.h:906:30: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (n < t_this::size ()) ;
+                              ^
+smat.base.h:1058:67: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (FALSE) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                                   ^
+smat.base.h:1062:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:1074:48: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwRows * dwCols <= t_base::GetSize ()) ;
+                                                ^
+smat.base.h:1238:47: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == t_this::m.nrow ()) ;
+                                               ^
+smat.base.h:1239:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSource < t_this::m.ncol ()) ;
+                                       ^
+smat.base.h:1240:35: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwDest < t_this::ncol ()) ;
+                                   ^
+smat.base.h:1263:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (mat)) ;
+                                ^
+smat.base.h:1281:46: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::ncol () == order.GetSize ()) ;
+                                              ^
+smat.base.h:1282:41: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == mat.nrow ()) ;
+                                         ^
+smat.base.h:1358:66: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (ref.GetSize () <= dwRows * dwCols * dwSize * sizeof (T)) ;
+                                                                  ^
+smat.base.h:1383:70: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   tc_item &Item (t_size idx)  const { THROW (idx < t_this::GetSize ()) ; return *m_apData [idx] ; }
+                                                                      ^
+In file included from smat.h:29:0,
+                 from smat.cpp:20:
+smat.elop.h:181:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:189:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:190:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:222:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:230:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:231:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:262:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (c)) ;
+                          ^
+smat.elop.h:263:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.nrow ()) ;
+                                 ^
+smat.elop.h:264:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:307:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == b.size ()) ;
+                                 ^
+smat.elop.h:308:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:342:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:343:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:344:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:354:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:355:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:356:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:357:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:399:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:400:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:401:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:411:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:412:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:413:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:414:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:453:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.ncol () == b.nsize ()) ;
+                                  ^
+smat.elop.h:454:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:464:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:465:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:466:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:467:43: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountMatches (e, d) == a.nrow ()) ;
+                                           ^
+smat.elop.h:515:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:516:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:530:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:531:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:532:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:533:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:571:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:611:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == d.size ()) ;
+                                 ^
+smat.elop.h:690:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:735:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:761:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:801:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:802:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:838:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == b.size ()) ;
+                                  ^
+smat.elop.h:839:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == c.size ()) ;
+                                  ^
+smat.elop.h:866:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:896:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:897:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:928:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncols ()) ;
+                                  ^
+smat.elop.h:950:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:951:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1010:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1034:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1056:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1079:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1108:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1109:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1110:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1146:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1147:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (c) == a.size ()) ;
+                                     ^
+smat.elop.h:1177:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1203:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1228:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+In file included from smat.h:31:0,
+                 from smat.cpp:20:
+smat.mem.h:25:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:34:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:35:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol()) ;
+                               ^
+smat.mem.h:59:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:60:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.size ()) ;
+                                ^
+smat.mem.h:84:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.size ()) ;
+                                ^
+smat.mem.h:177:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (v.nsize () == m.GetMinDim ()) ;
+                                      ^
+smat.mem.h:193:27: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwCol < b.ncol ()) ;
+                           ^
+smat.mem.h:207:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwStart <= dwEnd) ;
+                          ^
+smat.mem.h:208:28: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwEnd <= b.ncol ()) ;
+                            ^
+smat.mem.h:209:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.nrow ()) ;
+                                ^
+smat.mem.h:210:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == dwEnd - dwStart) ;
+                                      ^
+In file included from smat.h:32:0,
+                 from smat.cpp:20:
+smat.matop.h:82:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol() == b.size ()) ;
+                               ^
+smat.matop.h:83:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow() == b.size ()) ;
+                               ^
+smat.matop.h:128:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+smat.matop.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+In file included from smat.h:33:0,
+                 from smat.cpp:20:
+smat.misc.h:32:16: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (l <= u) ;
+                ^
+In file included from smat.h:36:0,
+                 from smat.cpp:20:
+smat.stat.h:172:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+smat.stat.h:212:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+smat.cpp:143:20: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (IsOwner ()) ;
+                    ^
+smat.cpp:324:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.nrow ()) ;
+                                ^
+smat.cpp:332:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.nrow ()) ;
+                                ^
+smat.cpp:333:58: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == c.nrow () && c.ncol () == b.ncol ()) ;
+                                                          ^
+smat.cpp:367:51: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.GetDim (!bTransA) == b.GetDim (bTransB)) ;
+                                                   ^
+smat.cpp:368:77: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.GetDim (bTransA) == c.nrow () && c.ncol () == b.GetDim (!bTransB)) ;
+                                                                             ^
+smat.cpp:403:54: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c.size () == ::sm_min (a.nrow (), a.ncol ())) ;
+                                                      ^
+smat.cpp:499:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (p == A.ncol ()) ;
+                        ^
+smat.cpp:509:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (p == A.ncol ()) ;
+                        ^
+smat.cpp:510:27: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (vVal.size () == p) ;
+                           ^
+smat.cpp:511:48: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (mVec.nrow () == p && mVec.ncol () == p) ;
+                                                ^
+smat.cpp:561:16: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (!nInfo) ;
+                ^
+smat.cpp:566:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (pd[2] == pd[1]) ;
+                        ^
+smat.cpp:612:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.size ()) ;
+                                ^
+smat.cpp:619:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.size ()) ;
+                                ^
+smat.cpp:620:58: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c.nrow () == a.nrow () && c.ncol () == a.nrow ()) ;
+                                                          ^
+smat.cpp:638:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.size ()) ;
+                                ^
+smat.cpp:645:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.size ()) ;
+                                ^
+smat.cpp:646:58: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c.nrow () == a.ncol () && c.ncol () == a.ncol ()) ;
+                                                          ^
+smat.cpp:675:76: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (b.nrow () == b.GetDim (bTransA) && b.ncol () == a.GetDim (bTransA)) ;
+                                                                            ^
+smat.cpp:693:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (b.nrow () == b.ncol ()) ;
+                                ^
+smat.cpp:694:42: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.GetDim (!bTransA) == b.nrow ()) ;
+                                          ^
+smat.cpp:701:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (b.nrow () == b.ncol ()) ;
+                                ^
+smat.cpp:702:42: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.GetDim (!bTransA) == b.nrow ()) ;
+                                          ^
+smat.cpp:703:76: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c.nrow () == a.GetDim (bTransA) && c.ncol () == a.GetDim (bTransA)) ;
+                                                                            ^
+smat.cpp:726:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.nrow ()) ;
+                                ^
+smat.cpp:733:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.nrow ()) ;
+                                ^
+smat.cpp:734:52: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (sm_min (a.nrow (), b.ncol ()) == c.size ()) ;
+                                                    ^
+smat.cpp:793:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.nrow ()) ;
+                                ^
+smat.cpp:849:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (b.nrow () == c.nrow ()) ;
+                                ^
+smat.cpp:877:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == a.ncol ()) ;
+                                ^
+smat.cpp:878:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.ncol ()) ;
+                                ^
+smat.cpp:963:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.size ()) ;
+                                ^
+smat.cpp:980:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.size ()) ;
+                                ^
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tclust.cpp -o tclust.o
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from tclust.cpp:1:
+smat.base.h:401:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:458:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:498:40: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwOffset + dwSize)) ;
+                                        ^
+smat.base.h:520:53: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (m_dwOffset + dwOffset + dwSize)) ;
+                                                     ^
+smat.base.h:540:44: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (GetOffset () + dwSize)) ;
+                                            ^
+smat.base.h:553:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwSize)) ;
+                             ^
+smat.base.h:662:65: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size  GetDim   (t_size p) const { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                                 ^
+smat.base.h:665:68: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size * GetDimPtr  (t_size p) const { THROW  (p < P) ; return m_adwDim + p ; }
+                                                                    ^
+smat.base.h:669:60: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline   t_size & GetDimRef  (t_size p)   { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                            ^
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from tclust.cpp:1:
+smat.base.h:735:63: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (0) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                               ^
+smat.base.h:742:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSize <= t_base::GetSize ()) ;
+                                       ^
+smat.base.h:754:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:882:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (vec)) ;
+                                ^
+smat.base.h:906:30: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (n < t_this::size ()) ;
+                              ^
+smat.base.h:1058:67: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (FALSE) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                                   ^
+smat.base.h:1062:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:1074:48: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwRows * dwCols <= t_base::GetSize ()) ;
+                                                ^
+smat.base.h:1238:47: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == t_this::m.nrow ()) ;
+                                               ^
+smat.base.h:1239:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSource < t_this::m.ncol ()) ;
+                                       ^
+smat.base.h:1240:35: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwDest < t_this::ncol ()) ;
+                                   ^
+smat.base.h:1263:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (mat)) ;
+                                ^
+smat.base.h:1281:46: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::ncol () == order.GetSize ()) ;
+                                              ^
+smat.base.h:1282:41: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == mat.nrow ()) ;
+                                         ^
+smat.base.h:1358:66: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (ref.GetSize () <= dwRows * dwCols * dwSize * sizeof (T)) ;
+                                                                  ^
+smat.base.h:1383:70: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   tc_item &Item (t_size idx)  const { THROW (idx < t_this::GetSize ()) ; return *m_apData [idx] ; }
+                                                                      ^
+In file included from smat.h:29:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from tclust.cpp:1:
+smat.elop.h:181:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:189:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:190:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:222:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:230:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:231:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:262:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (c)) ;
+                          ^
+smat.elop.h:263:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.nrow ()) ;
+                                 ^
+smat.elop.h:264:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:307:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == b.size ()) ;
+                                 ^
+smat.elop.h:308:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:342:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:343:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:344:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:354:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:355:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:356:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:357:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:399:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:400:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:401:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:411:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:412:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:413:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:414:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:453:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.ncol () == b.nsize ()) ;
+                                  ^
+smat.elop.h:454:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:464:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:465:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:466:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:467:43: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountMatches (e, d) == a.nrow ()) ;
+                                           ^
+smat.elop.h:515:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:516:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:530:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:531:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:532:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:533:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:571:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:611:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == d.size ()) ;
+                                 ^
+smat.elop.h:690:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:735:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:761:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:801:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:802:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:838:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == b.size ()) ;
+                                  ^
+smat.elop.h:839:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == c.size ()) ;
+                                  ^
+smat.elop.h:866:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:896:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:897:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:928:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncols ()) ;
+                                  ^
+smat.elop.h:950:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:951:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1010:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1034:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1056:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1079:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1108:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1109:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1110:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1146:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1147:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (c) == a.size ()) ;
+                                     ^
+smat.elop.h:1177:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1203:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1228:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+In file included from smat.h:31:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from tclust.cpp:1:
+smat.mem.h:25:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:34:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:35:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol()) ;
+                               ^
+smat.mem.h:59:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:60:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.size ()) ;
+                                ^
+smat.mem.h:84:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.size ()) ;
+                                ^
+smat.mem.h:177:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (v.nsize () == m.GetMinDim ()) ;
+                                      ^
+smat.mem.h:193:27: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwCol < b.ncol ()) ;
+                           ^
+smat.mem.h:207:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwStart <= dwEnd) ;
+                          ^
+smat.mem.h:208:28: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwEnd <= b.ncol ()) ;
+                            ^
+smat.mem.h:209:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.nrow ()) ;
+                                ^
+smat.mem.h:210:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == dwEnd - dwStart) ;
+                                      ^
+In file included from smat.h:32:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from tclust.cpp:1:
+smat.matop.h:82:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol() == b.size ()) ;
+                               ^
+smat.matop.h:83:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow() == b.size ()) ;
+                               ^
+smat.matop.h:128:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+smat.matop.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+In file included from smat.h:33:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from tclust.cpp:1:
+smat.misc.h:32:16: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (l <= u) ;
+                ^
+In file included from smat.h:36:0,
+                 from clust.h:8,
+                 from tclust.h:11,
+                 from tclust.cpp:1:
+smat.stat.h:172:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+smat.stat.h:212:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+g++  -I/usr/share/R/include -DNDEBUG -DR_PACKAGE_FILE     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tkmeans.cpp -o tkmeans.o
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tkmeans.h:1,
+                 from tkmeans.cpp:1:
+smat.base.h:401:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:458:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwIdx < GetSize ()) ;
+                             ^
+smat.base.h:498:40: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwOffset + dwSize)) ;
+                                        ^
+smat.base.h:520:53: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (m_dwOffset + dwOffset + dwSize)) ;
+                                                     ^
+smat.base.h:540:44: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (GetOffset () + dwSize)) ;
+                                            ^
+smat.base.h:553:29: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (HasRawCap (dwSize)) ;
+                             ^
+smat.base.h:662:65: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size  GetDim   (t_size p) const { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                                 ^
+smat.base.h:665:68: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline const t_size * GetDimPtr  (t_size p) const { THROW  (p < P) ; return m_adwDim + p ; }
+                                                                    ^
+smat.base.h:669:60: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   inline   t_size & GetDimRef  (t_size p)   { THROW  (p < P) ; return m_adwDim [p] ; }
+                                                            ^
+In file included from smat.h:28:0,
+                 from clust.h:8,
+                 from tkmeans.h:1,
+                 from tkmeans.cpp:1:
+smat.base.h:735:63: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (0) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                               ^
+smat.base.h:742:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSize <= t_base::GetSize ()) ;
+                                       ^
+smat.base.h:754:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:882:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (vec)) ;
+                                ^
+smat.base.h:906:30: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (n < t_this::size ()) ;
+                              ^
+smat.base.h:1058:67: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   const t_this &operator = (const t_this &p ) const { THROW (FALSE) ;} // this MUST never be called, as you can't change a constant matrix! Thus it's protected!
+                                                                   ^
+smat.base.h:1062:45: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (m.DimProd () <= t_base::GetSize ()) ;
+                                             ^
+smat.base.h:1074:48: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwRows * dwCols <= t_base::GetSize ()) ;
+                                                ^
+smat.base.h:1238:47: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == t_this::m.nrow ()) ;
+                                               ^
+smat.base.h:1239:39: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwSource < t_this::m.ncol ()) ;
+                                       ^
+smat.base.h:1240:35: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (dwDest < t_this::ncol ()) ;
+                                   ^
+smat.base.h:1263:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (this->EqualDims (mat)) ;
+                                ^
+smat.base.h:1281:46: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::ncol () == order.GetSize ()) ;
+                                              ^
+smat.base.h:1282:41: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (t_this::nrow () == mat.nrow ()) ;
+                                         ^
+smat.base.h:1358:66: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (ref.GetSize () <= dwRows * dwCols * dwSize * sizeof (T)) ;
+                                                                  ^
+smat.base.h:1383:70: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   tc_item &Item (t_size idx)  const { THROW (idx < t_this::GetSize ()) ; return *m_apData [idx] ; }
+                                                                      ^
+In file included from smat.h:29:0,
+                 from clust.h:8,
+                 from tkmeans.h:1,
+                 from tkmeans.cpp:1:
+smat.elop.h:181:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:189:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:190:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:222:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:230:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (b)) ;
+                          ^
+smat.elop.h:231:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:262:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.EqualDims (c)) ;
+                          ^
+smat.elop.h:263:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.nrow ()) ;
+                                 ^
+smat.elop.h:264:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:307:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == b.size ()) ;
+                                 ^
+smat.elop.h:308:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:342:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:343:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:344:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:354:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:355:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == c.size ()) ;
+                                 ^
+smat.elop.h:356:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:357:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:399:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:400:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:401:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:411:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.ncol ()) ;
+                                 ^
+smat.elop.h:412:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.ncol () == c.size ()) ;
+                                 ^
+smat.elop.h:413:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:414:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (d) == a.nrow ()) ;
+                                     ^
+smat.elop.h:453:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.ncol () == b.nsize ()) ;
+                                  ^
+smat.elop.h:454:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:464:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:465:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:466:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:467:43: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountMatches (e, d) == a.nrow ()) ;
+                                           ^
+smat.elop.h:515:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:516:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:530:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == c.ncol ()) ;
+                                 ^
+smat.elop.h:531:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.nrow () == d.size ()) ;
+                                 ^
+smat.elop.h:532:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:533:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:571:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.ncol () == b.size ()) ;
+                                 ^
+smat.elop.h:611:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == d.size ()) ;
+                                 ^
+smat.elop.h:690:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:735:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:761:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.nrow () == e.size ()) ;
+                                 ^
+smat.elop.h:801:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.ncol ()) ;
+                                 ^
+smat.elop.h:802:36: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (getMaxIdx (d) < c.nrow ()) ;
+                                    ^
+smat.elop.h:838:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == b.size ()) ;
+                                  ^
+smat.elop.h:839:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size  () == c.size ()) ;
+                                  ^
+smat.elop.h:866:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:896:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:897:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:928:34: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncols ()) ;
+                                  ^
+smat.elop.h:950:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:951:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1010:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1034:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == d.size ()) ;
+                                 ^
+smat.elop.h:1056:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1079:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1108:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.ncol ()) ;
+                                 ^
+smat.elop.h:1109:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (c.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1110:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (d.size () == b.nrow ()) ;
+                                 ^
+smat.elop.h:1146:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (b.size () == c.size ()) ;
+                                 ^
+smat.elop.h:1147:37: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (CountTrue (c) == a.size ()) ;
+                                     ^
+smat.elop.h:1177:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1203:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+smat.elop.h:1228:33: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+    THROW (a.size () == b.size ()) ;
+                                 ^
+In file included from smat.h:31:0,
+                 from clust.h:8,
+                 from tkmeans.h:1,
+                 from tkmeans.cpp:1:
+smat.mem.h:25:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:34:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < b.nrow  ()) ;
+                        ^
+smat.mem.h:35:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol()) ;
+                               ^
+smat.mem.h:59:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:60:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == b.size ()) ;
+                                ^
+smat.mem.h:84:24: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (c < a.nrow  ()) ;
+                        ^
+smat.mem.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.size ()) ;
+                                ^
+smat.mem.h:177:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (v.nsize () == m.GetMinDim ()) ;
+                                      ^
+smat.mem.h:193:27: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwCol < b.ncol ()) ;
+                           ^
+smat.mem.h:207:26: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwStart <= dwEnd) ;
+                          ^
+smat.mem.h:208:28: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (dwEnd <= b.ncol ()) ;
+                            ^
+smat.mem.h:209:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow () == b.nrow ()) ;
+                                ^
+smat.mem.h:210:38: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == dwEnd - dwStart) ;
+                                      ^
+In file included from smat.h:32:0,
+                 from clust.h:8,
+                 from tkmeans.h:1,
+                 from tkmeans.cpp:1:
+smat.matop.h:82:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol() == b.size ()) ;
+                               ^
+smat.matop.h:83:31: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.nrow() == b.size ()) ;
+                               ^
+smat.matop.h:128:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+smat.matop.h:156:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.ncol () == a.nrow ()) ;
+                                ^
+In file included from smat.h:33:0,
+                 from clust.h:8,
+                 from tkmeans.h:1,
+                 from tkmeans.cpp:1:
+smat.misc.h:32:16: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (l <= u) ;
+                ^
+In file included from smat.h:36:0,
+                 from clust.h:8,
+                 from tkmeans.h:1,
+                 from tkmeans.cpp:1:
+smat.stat.h:172:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+smat.stat.h:212:32: warning: macro "__DATE__" might prevent reproducible builds [-Wdate-time]
+   THROW (a.size () == b.ncol ()) ;
+                                ^
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o tclust.so ML_meal.o ML_package.o ML_passrng.o R_meal.o R_meal_BLAS.o R_package.o clust.o restr.o restr_eigen.o smat.o tclust.o tkmeans.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/tclust/libs
+** R
+** data
+** inst
+** tests
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (tclust)
+trying URL 'https://cran.rstudio.com/src/contrib/tsne_0.1-3.tar.gz'
+Content type 'application/x-gzip' length 4553 bytes
+==================================================
+downloaded 4553 bytes
+
+* installing *source* package ‘tsne’ ...
+** package ‘tsne’ successfully unpacked and MD5 sums checked
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (tsne)
+trying URL 'https://cran.rstudio.com/src/contrib/VGAM_1.0-3.tar.gz'
+Content type 'application/x-gzip' length 2509129 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+* installing *source* package ‘VGAM’ ...
+** package ‘VGAM’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c caqo3.c -o caqo3.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c cqof.f -o cqof.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c ei.f -o ei.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c fgam.f -o fgam.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gautr.c -o gautr.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c lerchphi.c -o lerchphi.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c lms.f -o lms.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c muxr3.c -o muxr3.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c rgam.f -o rgam.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rgam3.c -o rgam3.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c specfun3.c -o specfun3.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c tyeepolygamma.f -o tyeepolygamma.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tyeepolygamma3.c -o tyeepolygamma3.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c vcall2.f -o vcall2.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c vdigami.f -o vdigami.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c veigen.f -o veigen.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c vgam.f -o vgam.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vgam3.c -o vgam3.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c vlinpack1.f -o vlinpack1.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c vlinpack2.f -o vlinpack2.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c vlinpack3.f -o vlinpack3.o
+gfortran   -fpic  -g -O2 -fstack-protector-strong  -c vmux.f -o vmux.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vmux3.c -o vmux3.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c zeta3.c -o zeta3.o
+gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o VGAM.so caqo3.o cqof.o ei.o fgam.o gautr.o lerchphi.o lms.o muxr3.o rgam.o rgam3.o specfun3.o tyeepolygamma.o tyeepolygamma3.o vcall2.o vdigami.o veigen.o vgam.o vgam3.o vlinpack1.o vlinpack2.o vlinpack3.o vmux.o vmux3.o zeta3.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/VGAM/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** preparing package for lazy loading
+Creating a new generic function for ‘Rank’ in package ‘VGAM’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (VGAM)
+* installing *source* package ‘Seurat’ ...
+** libs
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include" -I"/usr/local/lib/R/site-library/RcppProgress/include"   -g -std=c++11 -Wall -pedantic -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I/usr/share/R/include -DNDEBUG  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include" -I"/usr/local/lib/R/site-library/RcppProgress/include"   -g -std=c++11 -Wall -pedantic -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c data_manipulation.cpp -o data_manipulation.o
+In file included from /usr/local/lib/R/site-library/RcppProgress/include/progress.hpp:13:0,
+                 from data_manipulation.cpp:2:
+/usr/local/lib/R/site-library/RcppProgress/include/interruptable_progress_monitor.hpp:101:0: warning: ignoring #pragma omp critical [-Wunknown-pragmas]
+ #pragma omp critical
+ ^
+/usr/local/lib/R/site-library/RcppProgress/include/interruptable_progress_monitor.hpp:143:0: warning: ignoring #pragma omp atomic [-Wunknown-pragmas]
+ #pragma omp atomic
+ ^
+/usr/local/lib/R/site-library/RcppProgress/include/interruptable_progress_monitor.hpp:149:0: warning: ignoring #pragma omp critical [-Wunknown-pragmas]
+ #pragma omp critical
+ ^
+data_manipulation.cpp: In function ‘Eigen::SparseMatrix<double, 0, int> RowMergeMatrices(Eigen::SparseMatrix<double, 1, int>, Eigen::SparseMatrix<double, 1, int>, std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’:
+data_manipulation.cpp:78:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < mat1_rownames.size(); i++){
+                    ^
+data_manipulation.cpp:82:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < mat2_rownames.size(); i++){
+                    ^
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Seurat.so RcppExports.o data_manipulation.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/Seurat/libs
+** R
+** inst
+** tests
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (Seurat)
+  |                                                                         |....................................                             |  56%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: installPAckages (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |...................................................              |  78%
+   inline R code fragments
+
+  |                                                                         |..........................................................       |  89%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M0C-installPackages.md
+

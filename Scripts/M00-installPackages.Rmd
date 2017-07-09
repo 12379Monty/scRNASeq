@@ -1,0 +1,150 @@
+###   Install R Packages
+ 
+```{r Prelims, include=F, echo=FALSE, results='hide', message=FALSE} 
+ FN <- "M0A-installPackages"
+
+ # DO NOT USE THIS
+ #if(file.exists('/share/R/x86_64-pc-linux-gnu-library/3.0'))
+ #.libPaths('/share/R/x86_64-pc-linux-gnu-library/3.0')
+
+  suppressMessages(require(rmarkdown))
+  suppressMessages(require(knitr))
+  options(stringsAsFactors=F) 
+
+  # Shotcuts for knitting and redering while in R session
+  kk <- function(n='') knit2html(paste("Scripts/t", n, sep=''), envir=globalenv(),
+        output=paste('Scripts/',FN,".html", sep=''))
+  bb <- function(n='') browseURL(paste('Scripts/',FN,".html", sep=''))
+
+  # The usual shorcuts
+  zz <- function(n='') source(paste("Scripts/t", n, sep=''))
+
+  if(file.exists('/Users/francois/Dropbox/SingleCell/Jun2017/R/'))
+  WRKDIR <- '/Users/francois/Dropbox/SingleCell/Jun2017/R/'  else
+  WRKDIR <- '/mnt100/home/Dropbox/SingleCell/Jun2017/R'
+
+  # do once
+  #setwd(WRKDIR)
+
+  # file rmarkdown file management options
+  #suppressMessages(dir.create('cache/M0A', recursive=T))
+  #opts_chunk$set(cache.path='cache/M0A/')
+  suppressMessages(dir.create('figure/M0A', recursive=T))
+  opts_chunk$set(fig.path='figure/M0A/')
+
+```
+<!-- ***************************************************** -->
+
+``` 
+[R blog](https://www.r-bloggers.com/how-to-install-r-on-linux-ubuntu-16-04-xenial-xerus/)
+ sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" | sudo tee -a /etc/apt/sources.list
+
+ gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+
+ gpg -a --export E084DAB9 | sudo apt-key add -
+
+ sudo apt-get update
+ sudo apt-get install r-base r-base-dev
+
+...
+```
+
+```{r ldGenomics, echo=T, eval=T}
+  #install.packages('S4Vectors')
+  # or 
+  #R CMD INSTALL BiocGenerics_0.20.0.tar.gz
+  #R CMD INSTALL S4Vectors_0.12.1.tar.gz 
+
+ RequiredLibs.vec <- 
+  c('Rsamtools', 'GenomeInfoDb', 'GenomicRanges', 'GenomicAlignments',
+    "rmarkdown", "knitr", "GenomicRanges", 
+    "rtracklayer", # requires libxml2
+    "BSgenome.Hsapiens.UCSC.hg19", #  requires libxml2
+    "biomaRt", "minfiData", #  requires libxml2
+    "AnnotationHub",
+    "BSgenome", "yeastRNASeq", 
+    "TxDb.Hsapiens.UCSC.hg19.knownGene", "ALL",
+    "GEOquery", "airway", "yeastRNASeq", "ShortRead","leeBamViews",
+    'ruv', 'sva','QDNAseq','QDNAseq.hg19',
+    'dplyr', 'DNAcopy')
+    # 'RAmazonS3', 'aws.s3')  ### THESE ODNT WORK!
+
+ InstalledLibs.vec <- installed.packages()[,1]
+ ToIntall.vec <- setdiff(RequiredLibs.vec,InstalledLibs.vec)
+ 
+ # Force install of ALL using sudo
+ ToIntall.vec <- RequiredLibs.vec
+
+ if(length(ToIntall.vec)){
+  source("http://www.bioconductor.org/biocLite.R")
+  biocLite(ToIntall.vec)
+ }
+
+require(devtools)
+install_github("RS3","Gastrograph")
+
+ # GEO
+ #biocLite('GEOquery', suppressUpdates=T) 
+ #biocLite('hgu133plus2.db', suppressUpdates=T) 
+```
+
+```{r}
+ ## UP TO HERE
+ knit_exit()
+```
+
+
+```{r ldCNA, eval=F}
+ # R CMD INSTALL Rhtslib_1.6.0.tar.gz
+ # # R CMD INSTALL bamsignals_1.6.0.tar.gz 
+
+  #biocLite('AneuFinder')
+  #install.packages('AneuFinder')
+
+  [aneufinder](https://github.com/ataudt/aneufinder)
+  library(devtools)
+  install_github("ataudt/aneufinderData")
+
+  install_github('ataudt/aneufinder')
+
+  biocLite('QDNAseq')
+
+```{r ldPredictive, eval=F}
+
+ RequiredLibs.vec <- 
+  c("gpls", "logicFS", "vbmp",'pROC','pamr','randomForest',
+    'kernlab', 'gbm', 'xgboost')
+
+ InstalledLibs.vec <- installed.packages()[,1]
+ ToIntall.vec <- setdiff(RequiredLibs.vec,InstalledLibs.vec)
+
+ if(length(ToIntall.vec)){
+  source("http://www.bioconductor.org/biocLite.R")
+  biocLite(ToIntall.vec)
+ }
+
+```
+
+
+```{r ldOthrt, eval=F}
+ install.packages("caret", dependencies = c("Depends", "Suggests"))
+
+ # Do we need to install these?
+ biocLite('doMC',  suppressUpdates=T) 
+
+###2: package ‘parallel’ is a base package, and should not be updated 
+#biocLite('parallel', suppressUpdates=T) 
+biocLite('SDDA',
+    lib.loc='/home/ubuntu/Dropbox/R/x86_64-pc-linux-gnu-library/3.3/')
+
+
+Install.packages('/home/ubuntu/Dropbox/R/SDDA_1.0-5.tar.gz', lib='/home/ubuntu/Dropbox/R/x86_64-pc-linux-gnu-library/3.3')
+
+
+```
+<!-- ***************************************************** -->
+
+<!-- To run
+nohup sudo  Rscript -e "knitr::knit2html('M0A-installPackages.Rmd')" > M0A-installPackages.log  &
+-->
+

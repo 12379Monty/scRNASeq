@@ -1,0 +1,85 @@
+###   Install R Packages - conitued
+ 
+Here add installs required for [seurat](//http://satijalab.org/seurat)
+
+<style type="text/css"> body, td { font-size: 14px; } code.r{ font-size: 12px; } pre { font-size: 12px } </style>
+
+```{r Prelims, include=F, echo=FALSE, results='hide', message=FALSE} 
+
+ FN <- "M0C-installPackages"
+
+  suppressMessages(require(rmarkdown))
+  suppressMessages(require(knitr))
+  options(stringsAsFactors=F) 
+
+  # Shotcuts for knitting and redering while in R session
+  kk <- function(n='') knit2html(paste("Scripts/t", n, sep=''), envir=globalenv(),
+        output=paste('Scripts/',FN,".html", sep=''))
+  bb <- function(n='') browseURL(paste('Scripts/',FN,".html", sep=''))
+
+  # The usual shorcuts
+  zz <- function(n='') source(paste("Scripts/t", n, sep=''))
+
+  if(file.exists('/Users/francois/Dropbox/SingleCell/Jun2017/R/'))
+  WRKDIR <- '/Users/francois/Dropbox/SingleCell/Jun2017/R/'  else
+  WRKDIR <- '/mnt100/home/Dropbox/SingleCell/Jun2017/R'
+
+  # do once
+  #setwd(WRKDIR)
+
+  # file rmarkdown file management options: cache, figures
+  #cache_DIR <- file.path(WRKDIR, 'Scripts', 'cache/M0C/')
+  #suppressMessages(dir.create(cache_DIR, recursive=T))
+  #opts_chunk$set(cache.path=cache_DIR)
+
+  #figure_DIR <- file.path(WRKDIR, 'Scripts', 'figure/M0C/')
+  #suppressMessages(dir.create(figure_DIR, recursive=T))
+  #opts_chunk$set(fig.path=figure_DIR)
+
+```
+<!-- ***************************************************** -->
+
+#### Install seurat From Source
+
+```{r installGithub, eval=T}
+ require(devtools)
+ install_github("satijalab/seurat")
+```
+
+### Install additional packages required
+
+```{r installPAckages, eval=F}
+ RequiredLibs.vec <- unique(
+  c(
+    ))
+
+ InstalledLibs.vec <- installed.packages()[,1]
+ ToIntall.vec <- setdiff(RequiredLibs.vec,InstalledLibs.vec)
+
+ if(length(ToIntall.vec)){
+  source("http://www.bioconductor.org/biocLite.R")
+  biocLite(ToIntall.vec)
+ }
+
+```
+
+### Parameter settings:
+  * WRKDIR = `r WRKDIR`
+  * FN = `r FN`
+  * Scripts = Scripts
+  * RUN DATE = `r date()`
+
+```{r, echo=F}
+ sessionInfo()
+### STOP HERE
+  knit_exit()
+```
+
+
+<!-- To run
+
+nohup sudo Rscript -e "knitr::knit2html('M0C-installPackages.Rmd')" > M0C-installPackages.log  &
+
+-->
+
+

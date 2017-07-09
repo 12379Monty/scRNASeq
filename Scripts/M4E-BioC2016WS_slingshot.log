@@ -1,0 +1,114 @@
+
+
+processing file: M4E-BioC2016WS_slingshot.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   7%
+label: Prelims (with options) 
+List of 5
+ $ include: symbol F
+ $ echo   : symbol F
+ $ results: chr "hide"
+ $ message: symbol F
+ $ warning: symbol F
+
+  |                                                                         |.......                                                          |  10%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  14%
+label: defFunctions (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |...........                                                      |  17%
+  ordinary text without R code
+
+  |                                                                         |.............                                                    |  21%
+label: loadLibs (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |................                                                 |  24%
+  ordinary text without R code
+
+  |                                                                         |..................                                               |  28%
+label: setParam (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |....................                                             |  31%
+  ordinary text without R code
+
+  |                                                                         |......................                                           |  34%
+label: options (with options) 
+List of 4
+ $ results: chr "hide"
+ $ include: symbol F
+ $ cache  : symbol F
+ $ message: symbol F
+
+  |                                                                         |.........................                                        |  38%
+  ordinary text without R code
+
+  |                                                                         |...........................                                      |  41%
+label: datain
+  |                                                                         |.............................                                    |  45%
+  ordinary text without R code
+
+  |                                                                         |...............................                                  |  48%
+label: lines_unsup
+Using full covariance matrix
+  |                                                                         |..................................                               |  52%
+  ordinary text without R code
+
+  |                                                                         |....................................                             |  55%
+label: lines_sup_start
+Using full covariance matrix
+  |                                                                         |......................................                           |  59%
+  ordinary text without R code
+
+  |                                                                         |........................................                         |  62%
+label: lines_sup_end
+Using full covariance matrix
+  |                                                                         |...........................................                      |  66%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: curves
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  76%
+label: genedata
+  |                                                                         |....................................................             |  79%
+  ordinary text without R code
+
+  |                                                                         |......................................................           |  83%
+label: fitgam
+  |                                                                         |........................................................         |  86%
+  ordinary text without R code
+
+  |                                                                         |..........................................................       |  90%
+label: heatmaps
+  |                                                                         |.............................................................    |  93%
+   inline R code fragments
+
+  |                                                                         |...............................................................  |  97%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M4E-BioC2016WS_slingshot.md
+
+Warning messages:
+1: In dir.create(cache_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/cache/M4E' already exists
+2: In dir.create(figure_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/figure/M4E' already exists
+3: In rgl.init(initValue, onlyNULL) : RGL: unable to open X11 display
+4: 'rgl_init' failed, running with rgl.useNULL = TRUE 
+5: .onUnload failed in unloadNamespace() for 'rgl', details:
+  call: fun(...)
+  error: object 'rgl_quit' not found 

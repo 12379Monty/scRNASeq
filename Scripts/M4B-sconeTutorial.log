@@ -1,0 +1,211 @@
+
+
+processing file: M4B-sconeTutorial.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   2%
+  ordinary text without R code
+
+  |                                                                         |..                                                               |   3%
+label: Prelims (with options) 
+List of 5
+ $ include: symbol F
+ $ echo   : symbol F
+ $ results: chr "hide"
+ $ message: symbol F
+ $ warning: symbol F
+
+  |                                                                         |...                                                              |   5%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   7%
+label: defFunctions (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |.....                                                            |   8%
+  ordinary text without R code
+
+  |                                                                         |......                                                           |  10%
+label: loadLibs (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |.......                                                          |  11%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  13%
+label: setParam (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |..........                                                       |  15%
+  ordinary text without R code
+
+  |                                                                         |...........                                                      |  16%
+label: options (with options) 
+List of 4
+ $ include: logi FALSE
+ $ cache  : logi FALSE
+ $ results: chr "hide"
+ $ message: logi FALSE
+
+  |                                                                         |............                                                     |  18%
+  ordinary text without R code
+
+  |                                                                         |.............                                                    |  20%
+label: datain
+  |                                                                         |..............                                                   |  21%
+  ordinary text without R code
+
+  |                                                                         |...............                                                  |  23%
+label: showqc
+  |                                                                         |................                                                 |  25%
+  ordinary text without R code
+
+  |                                                                         |.................                                                |  26%
+label: biocoverage
+  |                                                                         |..................                                               |  28%
+  ordinary text without R code
+
+  |                                                                         |...................                                              |  30%
+label: prefilter
+  |                                                                         |....................                                             |  31%
+  ordinary text without R code
+
+  |                                                                         |.....................                                            |  33%
+label: ralign
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |.......................                                          |  36%
+label: nreads
+  |                                                                         |.........................                                        |  38%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  39%
+label: qpc
+  |                                                                         |...........................                                      |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  43%
+label: qpc_view
+  |                                                                         |.............................                                    |  44%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  46%
+label: fnr_fit
+  |                                                                         |...............................                                  |  48%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  49%
+label: fnr_vis (with options) 
+List of 4
+ $ fig.width : num 8
+ $ fig.height: num 4
+ $ out.width : chr "800px"
+ $ out.height: chr "400px"
+
+  |                                                                         |.................................                                |  51%
+  ordinary text without R code
+
+  |                                                                         |..................................                               |  52%
+label: metric_sample_filter (with options) 
+List of 2
+ $ fig.height: num 10
+ $ out.height: chr "1000px"
+
+  |                                                                         |...................................                              |  54%
+  ordinary text without R code
+
+  |                                                                         |....................................                             |  56%
+label: thresh (with options) 
+List of 4
+ $ fig.width : num 6
+ $ fig.height: num 4
+ $ out.width : chr "600px"
+ $ out.height: chr "400px"
+
+  |                                                                         |.....................................                            |  57%
+  ordinary text without R code
+
+  |                                                                         |......................................                           |  59%
+label: filterCount
+  |                                                                         |.......................................                          |  61%
+  ordinary text without R code
+
+  |                                                                         |........................................                         |  62%
+label: scone_init
+  |                                                                         |..........................................                       |  64%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  66%
+label: scone_in2
+  |                                                                         |............................................                     |  67%
+  ordinary text without R code
+
+  |                                                                         |.............................................                    |  69%
+label: scone_in3 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |...............................................                  |  72%
+label: scone_params
+  |                                                                         |................................................                 |  74%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: scone_params_view
+  |                                                                         |..................................................               |  77%
+  ordinary text without R code
+
+  |                                                                         |...................................................              |  79%
+label: scone_params_filt (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |....................................................             |  80%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  82%
+label: scone_run
+  |                                                                         |......................................................           |  84%
+  ordinary text without R code
+
+  |                                                                         |.......................................................          |  85%
+label: scone_view1
+  |                                                                         |........................................................         |  87%
+  ordinary text without R code
+
+  |                                                                         |..........................................................       |  89%
+label: biplot_color
+  |                                                                         |...........................................................      |  90%
+  ordinary text without R code
+
+  |                                                                         |............................................................     |  92%
+label: biplot_color4
+  |                                                                         |.............................................................    |  93%
+  ordinary text without R code
+
+  |                                                                         |..............................................................   |  95%
+label: sconeReport (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |...............................................................  |  97%
+   inline R code fragments
+
+  |                                                                         |................................................................ |  98%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M4B-sconeTutorial.md
+
+Warning messages:
+1: In dir.create(cache_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/cache/M4B' already exists
+2: In dir.create(figure_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/figure/M4B' already exists

@@ -1,0 +1,249 @@
+
+
+processing file: M4A-BioC2016WS_scone.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   2%
+  ordinary text without R code
+
+  |                                                                         |..                                                               |   4%
+label: Prelims (with options) 
+List of 5
+ $ include: symbol F
+ $ echo   : symbol F
+ $ results: chr "hide"
+ $ message: symbol F
+ $ warning: symbol F
+
+  |                                                                         |...                                                              |   5%
+  ordinary text without R code
+
+  |                                                                         |.....                                                            |   7%
+label: defFunctions (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |......                                                           |   9%
+  ordinary text without R code
+
+  |                                                                         |.......                                                          |  11%
+label: loadLibs (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |........                                                         |  12%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  14%
+label: setParam (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |...........                                                      |  18%
+label: sconeOptions (with options) 
+List of 4
+ $ results: chr "hide"
+ $ include: symbol F
+ $ cache  : symbol F
+ $ message: symbol F
+
+  |                                                                         |.............                                                    |  19%
+   inline R code fragments
+
+  |                                                                         |..............                                                   |  21%
+label: datain (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |...............                                                  |  23%
+  ordinary text without R code
+
+  |                                                                         |................                                                 |  25%
+label: showqc (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |.................                                                |  26%
+  ordinary text without R code
+
+  |                                                                         |..................                                               |  28%
+label: batchbio (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |...................                                              |  30%
+  ordinary text without R code
+
+  |                                                                         |.....................                                            |  32%
+label: ralign (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |......................                                           |  33%
+  ordinary text without R code
+
+  |                                                                         |.......................                                          |  35%
+label: nreads (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |........................                                         |  37%
+  ordinary text without R code
+
+  |                                                                         |.........................                                        |  39%
+label: qpc (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |..........................                                       |  40%
+  ordinary text without R code
+
+  |                                                                         |...........................                                      |  42%
+label: qpc_view (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |.............................                                    |  44%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  46%
+label: fnr_fit (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |...............................                                  |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  49%
+label: fnr_vis (with options) 
+List of 5
+ $ eval      : symbol T
+ $ fig.width : num 8
+ $ fig.height: num 4
+ $ out.width : chr "800px"
+ $ out.height: chr "400px"
+
+  |                                                                         |.................................                                |  51%
+  ordinary text without R code
+
+  |                                                                         |..................................                               |  53%
+label: metric_sample_filter (with options) 
+List of 1
+ $ eval: symbol T
+
+  |                                                                         |...................................                              |  54%
+  ordinary text without R code
+
+  |                                                                         |....................................                             |  56%
+label: thresh (with options) 
+List of 5
+ $ eval      : symbol T
+ $ fig.width : num 6
+ $ fig.height: num 4
+ $ out.width : chr "600px"
+ $ out.height: chr "400px"
+
+  |                                                                         |......................................                           |  58%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: filterCount
+  |                                                                         |........................................                         |  61%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  63%
+label: scone_params (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |..........................................                       |  65%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: scone_params_view (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |............................................                     |  68%
+  ordinary text without R code
+
+  |                                                                         |..............................................                   |  70%
+label: scone_params_filt (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |...............................................                  |  72%
+  ordinary text without R code
+
+  |                                                                         |................................................                 |  74%
+label: scone_run (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |.................................................                |  75%
+  ordinary text without R code
+
+  |                                                                         |..................................................               |  77%
+label: scone_view1 (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |...................................................              |  79%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  81%
+label: scone_view2 (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |......................................................           |  82%
+  ordinary text without R code
+
+  |                                                                         |.......................................................          |  84%
+label: biplot_colored (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |........................................................         |  86%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: biplot_colored2 (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |..........................................................       |  89%
+  ordinary text without R code
+
+  |                                                                         |...........................................................      |  91%
+label: biplot_colored3 (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |............................................................     |  93%
+  ordinary text without R code
+
+  |                                                                         |..............................................................   |  95%
+label: biplot_colored4 (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |...............................................................  |  96%
+   inline R code fragments
+
+  |                                                                         |................................................................ |  98%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: symbol F
+
+
+output file: M4A-BioC2016WS_scone.md
+
+Warning messages:
+1: In dir.create(cache_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/cache/M4A' already exists
+2: In dir.create(figure_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/figure/M4A' already exists
+3: In dir.create(TABLE_DIR, recursive = T) :
+  '/mnt100/home/Dropbox/SingleCell/Jun2017/R/Scripts/tables/M4A' already exists

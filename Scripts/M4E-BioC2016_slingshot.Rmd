@@ -1,0 +1,305 @@
+### BioC 2016 workshop - Analysis of single-cell RNA-seq data with R and Bioconductor
+
+### III - Lineage Reconstruction
+
+<style type="text/css"> body, td { font-size: 14px; } code.r{ font-size: 12px; } pre { font-size: 12px } </style>
+
+[BioC 2016 workshop](https://github.com/drisso/bioc2016singlecell)
+[slingshot](https://github.com/kstreet13/slingshot)
+
+```{r Prelims, include=F, echo=F, results='hide', message=F,warning=F}
+
+  FN <- "M4E-BioC2016WS_slingshot"
+
+  suppressMessages(require(rmarkdown))
+  suppressMessages(require(knitr))
+  options(stringsAsFactors=F)
+
+  # Shotcuts for knitting and redering while in R session
+  kk <- function(n='') knit2html(paste("Scripts/t", n, sep=''), envir=globalenv(),
+        output=paste('Scripts/',FN,".html", sep=''))
+  bb <- function(n='') browseURL(paste('Scripts/',FN,".html", sep=''))
+
+  # The usual shorcuts
+  zz <- function(n='') source(paste("Scripts/t", n, sep=''))
+
+  if(file.exists('/Users/francois/Dropbox/SingleCell/Jun2017/R/'))
+  WRKDIR <- '/Users/francois/Dropbox/SingleCell/Jun2017/R/'  else
+  WRKDIR <- '/mnt100/home/Dropbox/SingleCell/Jun2017/R'
+
+  # do once
+  #setwd(WRKDIR)
+
+  # file rmarkdown file management options: cache, figures
+  cache_DIR <- file.path(WRKDIR, 'Scripts', 'cache/M4E/')
+  suppressMessages(dir.create(cache_DIR, recursive=T))
+  opts_chunk$set(cache.path=cache_DIR)
+
+  figure_DIR <- file.path(WRKDIR, 'Scripts', 'figure/M4E/')
+  suppressMessages(dir.create(figure_DIR, recursive=T))
+  opts_chunk$set(fig.path=figure_DIR)
+
+  # Options from SingleCell RNAseq Workflow
+  opts_chunk$set(error=F, message=F, warning=F)
+  opts_chunk$set(fig.width=11, fig.height=8)
+  opts_chunk$set(dpi=300, dev="png", dev.args=list(pointsize=15))
+  options(bitmapType="cairo", width=100)
+
+```
+<!-- ***************************************************** -->
+
+```{r defFunctions, echo=F}
+  # Place holder
+```
+<!-- ***************************************************** -->
+
+
+```{r loadLibs, echo=F}
+ #suppressMessages(require(monocle))
+
+ #suppressMessages(require(Seurat))
+ #suppressMessages(require(dplyr))
+ #suppressMessages(require(Matrix))
+
+ #suppressMessages(require(magrittr))
+
+ #suppressMessages(require(data.table))
+ #options(datatable.fread.datatable=F)
+
+ #suppressMessages(require(RColorBrewer))
+
+ #suppressMessages(require(edgeR))
+ #suppressMessages(require(limma))
+
+ #suppressMessages(require(Biobase))
+ #suppressMessages(require(GenomicRanges))  ### PROBLEM on Mac OS!!!
+                                           
+ #suppressMessages(require(vcd))
+ #suppressMessages(require(stringr))
+ #suppressMessages(require(reshape2))
+ #suppressMessages(require(tidyr))
+ #suppressMessages(require(plyr))
+ #suppressMessages(require(irlba))
+ #suppressMessages(require(readr))
+ #suppressMessages(require(scater))        ### PROBLEM on Mac OS!!!
+
+ #suppressMessages(require(BiocStyle))
+
+ #suppressMessages(require(R.utils))
+ #suppressMessages(require(readxl))
+
+ #suppressMessages(require(Rtsne))
+
+ # ABLE TO INSTALL mvoutlier and destiny - Finally!
+ #suppressMessages(require(mvoutlier))
+ #suppressMessages(require(destiny))
+
+ #suppressMessages(require(scran))
+
+ # Setting single-core unless explicitly specified otherwise.
+ suppressMessages(require(BiocParallel))
+ register(SerialParam())
+
+```
+<!-- ***************************************************** -->
+
+
+```{r setParam, echo=F}
+
+ if(file.exists('/Users/francois/Dropbox/SingleCell/'))
+ ROOT <- '/Users/francois/Dropbox/SingleCell/'  else
+ ROOT <- '/mnt100/home/Dropbox/SingleCell/'
+
+ #TABLE_DIR <- file.path(WRKDIR, 'Scripts', 'tables', 'M4E')
+ #suppressMessages(dir.create(TABLE_DIR,recursive=T))
+ 
+```
+<!-- ***************************************************** -->
+
+
+<!--
+%\VignetteEngine{knitr::rmarkdown}
+%\VignetteIndexEntry{slingshot Vignette}
+-->
+
+```{r options, results="hide", include=FALSE, cache=FALSE, results='hide', message=FALSE}
+ SKIP.THIS <- function() {
+ knitr::opts_chunk$set(fig.align="center", cache=FALSE,
+         error=FALSE, #make it stop on error
+         fig.width=7, fig.height=7, autodep=TRUE, 
+         out.width="600px", out.height="600px", results="markup", 
+         echo=TRUE, eval=TRUE)
+ }
+ #knitr::opts_knit$set(stop_on_error = 2L) #really make it stop
+ #knitr::dep_auto()
+ options(getClass.msg=FALSE) #get rid of messages about cache 
+ 
+ set.seed(98883) ## for reproducibility
+
+ suppressMessages(require(bioc2016singlecell))
+ suppressMessages(require(slingshot))
+ suppressMessages(require(clusterExperiment))
+ suppressMessages(require(gam))
+
+```
+
+# Introduction
+
+This is the third part of the Bioc2016 workshop "Analysis of single-cell RNA-seq data with R and Bioconductor."
+
+In this part we will cover lineage reconstruction with the `Githubpkg("kstreet13/slingshot")` package.
+
+The goal of `slingshot` is to use clusters to uncover global structure and convert this structure into smooth lineages represented by one-dimensional variables, often called ``pseudotime.'' We give tools for learning cluster relationships in an unsupervised or semi-supervised manner and constructing smooth curves representing each lineage, with visualization methods for each step.
+
+## Basic `slingshot` analysis
+
+The minimal input to `slingshot` is a matrix representing the cells in a reduced-dimensional space and a vector of clustering results. The analysis then procedes:
+
+* Find connections between clusters with the `get_lineages` function, optionally specifying known start and end points.
+* Construct smooth curves and pseudotime variables with the `get_curves` function.
+* Assess the cluster connectivity with `plot_tree` and the curve stability with `plot_curves`.
+
+Using connections between clusters to define global structure improves the stability of inferred lineages. And our use of smooth curves in place of piecewise-linear ones reduces variability in the inferred pseudotime vectors.
+
+## An example dataset
+
+We will take our inputs from the previous sections: the normalized counts matrix obtained with `scone` and the cluster assignments obtained with `clusterExperiment`, both of which can be loaded directly from the workshop package.
+
+```{r datain}
+data('full_pca')
+
+## Examine dimensionality reduction
+# plot3d(pcaX, aspect = 'iso')
+pairs(pcaX[,1:3], asp = 1)
+```
+
+# Step 1: Assign clusters to lineages with `get_lineages`
+
+The `get_lineages` function takes as input an `n x p` matrix and a vector of clustering results of length `n`. It then maps connections between adjacent clusters using a minimum spanning tree (MST) and identifies paths through these connections that represent potential lineages.
+
+This analysis can be performed in an entirely unsupervised manner or in a semi-supervised manner by specifying known beginning and end point clusters. We recommend that you specify a root cluster; this will have no effect on how the clusters are connected, but it will allow for nicer curves in datasets with a branching structure. Pre-specified end point clusters will be constrained to only one connection.
+
+```{r lines_unsup}
+l1 <- get_lineages(pcaX, clus)
+# plot_tree(pcaX, clus, l1, threeD = TRUE)
+plot_tree(pcaX, clus, l1, dim = 3)
+```
+
+Running `get_lineages` with no supervision produces the connections shown above. Since no root cluster was specified, `slingshot` picked one of the leaf-node clusters to be the beginning, based on a simple parsimony rule. The root cluster is the leaf-node cluster connected by a green line.
+
+```{r lines_sup_start}
+l2 <- get_lineages(pcaX, clus, start.clus = 'm10')
+# plot_tree(pcaX, clus, l2, threeD = TRUE)
+plot_tree(pcaX, clus, l2, dim = 3)
+```
+
+When we specify a root cluster we get the same connections and the only difference is which line is drawn in green.
+
+```{r lines_sup_end}
+l3 <- get_lineages(pcaX, clus, start.clus = 'm10', end.clus = 'm17')
+# plot_tree(pcaX, clus, l3, threeD = TRUE)
+plot_tree(pcaX, clus, l3, dim = 3)
+```
+
+Here we demonstrate the ability to specify end point clusters, which puts a constraing on the connections. We now draw the MST subject to the constraint that given end point clusters must be leaves. Pre-specified end point clusters are connected by red lines.
+
+There are a few additional arguments we could have passed to `get_lineages` for more greater control:
+
+* `dist.fun` is a function for computing distances between clusters. The default is squared distance between cluster centers normalized by their joint covariance matrix.
+* `omega` is a granularity parameter, allowing the user to set an upper limit on connection distances. It takes values between 0 and 1 (or `Inf`), representing a percentage of the largest observed distance.
+* `distout` is a logical value, indicating whether the user wants the pairwise cluster distance matrix to be returned with the output.
+
+After constructing the MST, `get_lineages` identifies paths through the tree to designate as lineages. At this stage, a lineage will consist of an ordered set of cluster names, starting with the root cluster and ending with a leaf. The output of `get_lineages` is a list of these vectors, along with some additional information on how they were constructed.
+
+# Step 2: Construct smooth lineages and order cells with `get_curves`
+
+In order to model development along these various lineages, we will construct smooth curves with the function `get_curves`. Using smooth curves based on all the cells eliminates the problem of cells projecting onto vertices of piece-wise linear trajectories and makes `slingshot` more robust to noise in the clustering results.
+
+In order to construct smooth lineages, `get_curves` follows an iterative process similar to that of principal curves presented in [@princurve]. When there is only a single lineage, the resulting curve is simply the principal curve through the center of the data, with one adjustment: the initial curve is constructed with the linear connections between cluster centers rather than the first prinicpal component of the data. This adjustment adds stability and typically hastens the algorithm's convergence.
+
+When there are two or more lineages, we add an additional step to the algorithm: averaging curves near shared cells. Both lineages should agree fairly well on cells that have yet to differentiate, so at each iteration we average the curves in the neighborhood of these cells. This increases the stability of the algorithm and produces smooth branching lineages.
+
+```{r curves}
+crv <- get_curves(pcaX, clus, l2)
+# plot_curves(pcaX, clus, crv, threeD = TRUE)
+plot_curves(pcaX, clus, crv, dim = 3)
+```
+
+The output of `get_curves` is a list with one element per curve. Each element is an object of the `principal.curve` class, with the following slots:
+
+* `s`: the matrix of points that make up the curve. These correspond to the orthogonal projections of the data points, but oredered such the `lines(s)` will produce a smooth curve.
+* `tag`: the indices of the original data points in `s`.
+* `lambda`: arclengths of the points in `s` along the curve.
+* `dist`: the total squared distance between data points and their projections onto the curve.
+* `pseudotime`: the vector of pseudotime values along this lineage.
+
+# Step 3: Find temporally expressed genes
+
+Typically, the next step will be to find genes that change their expression as a function of developmental time. This can be done using the full genes-by-samples data matrix, but we will use the subset consisting of the 1,000 most variable genes.
+
+```{r genedata}
+data('var_genes')
+```
+
+For a quick analysis, we will regress each gene on the two pseudotime vectors we have generated, using a general additive model (GAM). This allows us to detect non-linear patterns in gene expression over developmental time.
+
+```{r fitgam}
+gam.pval <- vector("list",length(crv))
+for(l in 1:length(crv)){
+  t <- crv[[l]]$pseudotime
+  y <- vargenes[, match(rownames(crv[[l]]$s[!is.na(t),]),rownames(pcaX))]
+  t <- t[! is.na(t)]
+  gam.pval[[l]] <- apply(y,1,function(z){
+    d <- data.frame(z=z, t=t)
+    tmp <- gam(z ~ lo(t), data=d)
+    p <- summary(tmp)[4][[1]][1,5]
+    p
+  })
+}
+```
+
+We can then pick out the top genes for each lineage and visualize their expression over developmental time with a heatmap.
+
+```{r heatmaps}
+topgenes1 <- names(sort(gam.pval[[1]], decreasing = FALSE))[1:100]
+heatdata1 <- vargenes[rownames(vargenes) %in% topgenes1, order(crv[[1]]$pseudotime, na.last = NA)]
+heatclus1 <- clus[clus!='-1'][order(crv[[1]]$pseudotime, na.last = NA)]
+ce1 <- clusterExperiment(heatdata1, heatclus1, transformation=identity)
+plotHeatmap(ce1, clusterSamplesData="orderSamplesValue")
+
+topgenes2 <- names(sort(gam.pval[[2]], decreasing = FALSE))[1:100]
+heatdata2 <- vargenes[rownames(vargenes) %in% topgenes2, order(crv[[2]]$pseudotime, na.last = NA)]
+heatclus2 <- clus[clus!='-1'][order(crv[[2]]$pseudotime, na.last = NA)]
+ce2 <- clusterExperiment(heatdata2, heatclus2, transformation=identity)
+plotHeatmap(ce2, clusterSamplesData="orderSamplesValue")
+```
+
+# Session Info
+
+```{r session}
+sessionInfo()
+```
+
+# References
+
+ 
+### Parameter settings:
+  * WRKDIR = `r WRKDIR`
+  * FN = `r FN`
+  * Scripts = Scripts
+  * RUN DATE = `r date()`
+
+
+```{r, echo=F}
+ sessionInfo()
+### STOP HERE
+  knit_exit()
+```
+
+
+<!-- To run
+
+nohup sudo Rscript -e "knitr::knit2html('M4E-BioC2016WS_slingshot.Rmd')" > M4E-BioC2016WS_slingshot.log  &
+
+-->
+

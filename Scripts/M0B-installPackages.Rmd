@@ -1,0 +1,124 @@
+###   Install R Packages
+ 
+<style type="text/css"> body, td { font-size: 14px; } code.r{ font-size: 12px; } pre { font-size: 12px } </style>
+
+```{r Prelims, include=F, echo=FALSE, results='hide', message=FALSE} 
+
+ FN <- "M0B-installPackages"
+
+  suppressMessages(require(rmarkdown))
+  suppressMessages(require(knitr))
+  options(stringsAsFactors=F) 
+
+  # Shotcuts for knitting and redering while in R session
+  kk <- function(n='') knit2html(paste("Scripts/t", n, sep=''), envir=globalenv(),
+        output=paste('Scripts/',FN,".html", sep=''))
+  bb <- function(n='') browseURL(paste('Scripts/',FN,".html", sep=''))
+
+  # The usual shorcuts
+  zz <- function(n='') source(paste("Scripts/t", n, sep=''))
+
+  if(file.exists('/Users/francois/Dropbox/SingleCell/Jun2017/R/'))
+  WRKDIR <- '/Users/francois/Dropbox/SingleCell/Jun2017/R/'  else
+  WRKDIR <- '/mnt100/home/Dropbox/SingleCell/Jun2017/R'
+
+  # do once
+  #setwd(WRKDIR)
+
+  # file rmarkdown file management options: cache, figures
+  #cache_DIR <- file.path(WRKDIR, 'Scripts', 'cache/M0B/')
+  #suppressMessages(dir.create(cache_DIR, recursive=T))
+  #opts_chunk$set(cache.path=cache_DIR)
+
+  #figure_DIR <- file.path(WRKDIR, 'Scripts', 'figure/M0B/')
+  #suppressMessages(dir.create(figure_DIR, recursive=T))
+  #opts_chunk$set(fig.path=figure_DIR)
+
+```
+<!-- ***************************************************** -->
+
+### Install additional packages
+
+Install all packages used in
+[Hicks](https://github.com/stephaniehicks/scBatchPaper)
+
+#### NOTE: could not install 'mvoutlier', 'destiny' 
+
+Cause 'http://ab-initio.mit.edu/nlopt/nlopt-2.4.2.tar.gz' is non-responsive.
+Can download nlopt-2.4.2.tar.gz from 
+https://osdn.net/projects/sfnet_daetools/downloads/gnu-linux-libs/nlopt-2.4.2.tar.gz/
+
+To install:
+* tar xvfz nlopt-2.4.2.tar.gz
+* cd nlopt-2.4.2
+* ./configure
+* makes
+* make install
+
+Then try installing  'mvoutlier' and 'destiny'  again.  **Still Fails!!!**
+
+#### FIXED after ab-initio.mit.edu cma eback online:
+* had to "make uninstall" nlopt-2.4.2 first.
+* then biocLite(c(mvoutlier', 'destiny'))
+* Done!
+
+```{r installPAckages, eval=T}
+ RequiredLibs.vec <- unique(
+  c('R.utils', 'readxl', 'Rtsne', 'mvoutlier', 'destiny', 'scran', 'BiocParallel',
+    'Biobase', 'GenomicRanges', 'vcd', 'stringr', 'reshape2',
+    'tidyr', 'plyr', 'dplyr', 'irlba', 'readr', 'scater',
+    'knitr', 'ggplot2', 'grid', 'cowplot', 'Biobase', 'GenomicRanges', 
+    'stringr', 'reshape2', 'tidyr', 'RColorBrewer', 'plyr', 'dplyr', 
+    'irlba', 'rafalib' , 'rafalib', 'SummarizedExperiment', 'MultiAssayExperiment', 
+    'scRNASeqMouseShalekBMDCs', 'scRNASeqHCT116CellLinesWu', 'scRNASeqMouseShalekBMDCs', 
+    'scRNASeqHCT116CellLinesWu', 'scRNASeqMouseShalekBMDCs', 'scRNASeqHCT116CellLinesWu', 
+    'scRNASeqMouseShalekBMDCs', 'scRNASeqHCT116CellLinesWu', 'scRNASeqMouseShalekBMDCs', 
+    'scRNASeqHCT116CellLinesWu', 'scRNASeqMouseDengMonoAllelic', 'scRNASeqMouseJaitinSpleen',
+    'scRNASeqMouseKumarPSC', 'SummarizedExperiment', 'scRNASeqHumanPatelGlioblastoma', 
+    'scRNASeqMouseShalekDendritic', 'scRNASeqMouseTreutleinLineage', 'scRNASeqHumanBosePrinting', 
+    'scRNASeqMouseBurnsInnerEar', 'scRNASeqHumanGuoGermCells', 'scRNASeqMouseKowalczykAging', 
+    'scRNASeqHumanLengOscillatoryGenes', 'scRNASeqDaniSajitaSeurat', 'scRNASeqMouseZeiselCortex', 
+    'scRNASeqHumanPatelGlioblastoma'))
+
+
+ InstalledLibs.vec <- installed.packages()[,1]
+ ToIntall.vec <- setdiff(RequiredLibs.vec,InstalledLibs.vec)
+
+
+ #ToIntall.vec <- c('nloptr', 'lme4', 'pbkrtest', 'car', 'VIM', 'robCompositions')
+ 
+
+ if(length(ToIntall.vec)){
+  source("http://www.bioconductor.org/biocLite.R")
+  biocLite(ToIntall.vec)
+ }
+
+```
+
+```{r installGithub, eval=F}
+ require(devtools)
+ install_github("willtownes/patel2014gliohuman")
+ install_github("stephaniehicks/trapnell2014myoblasthuman")
+
+```
+
+### Parameter settings:
+  * WRKDIR = `r WRKDIR`
+  * FN = `r FN`
+  * Scripts = Scripts
+  * RUN DATE = `r date()`
+
+```{r, echo=F}
+ sessionInfo()
+### STOP HERE
+  knit_exit()
+```
+
+
+<!-- To run
+
+nohup sudo Rscript -e "knitr::knit2html('M0B-installPackages.Rmd')" > M0B-installPackages.log  &
+
+-->
+
+
